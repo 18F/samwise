@@ -1,6 +1,6 @@
 require 'pry'
 
-module Tarly
+module Samwise
   module Util
     def self.format_duns(duns: duns)
       if duns.length == 9

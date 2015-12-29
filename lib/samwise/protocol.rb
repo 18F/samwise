@@ -1,4 +1,4 @@
-module Tarly
+module Samwise
   module Protocol
     BASE_URL = "https://api.data.gov"
     API_VERSION = "v1"

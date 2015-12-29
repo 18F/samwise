@@ -1,12 +1,12 @@
-# tarly
+# samwise
 
-* [Homepage](https://rubygems.org/gems/tarly)
-* [Documentation](http://rubydoc.info/gems/tarly/frames)
+* [Homepage](https://rubygems.org/gems/samwise)
+* [Documentation](http://rubydoc.info/gems/samwise/frames)
 
-[![Build Status](https://travis-ci.org/18F/tarly.svg)](https://travis-ci.org/18F/tarly)
-[![Code Climate](https://codeclimate.com/github/18F/tarly/badges/gpa.svg)](https://codeclimate.com/github/18F/tarly)
-[![Test Coverage](https://codeclimate.com/github/18F/tarly/badges/coverage.svg)](https://codeclimate.com/github/18F/tarly/coverage)
-[![Issue Count](https://codeclimate.com/github/18F/tarly/badges/issue_count.svg)](https://codeclimate.com/github/18F/tarly)
+[![Build Status](https://travis-ci.org/18F/samwise.svg)](https://travis-ci.org/18F/samwise)
+[![Code Climate](https://codeclimate.com/github/18F/samwise/badges/gpa.svg)](https://codeclimate.com/github/18F/samwise)
+[![Test Coverage](https://codeclimate.com/github/18F/samwise/badges/coverage.svg)](https://codeclimate.com/github/18F/samwise/coverage)
+[![Issue Count](https://codeclimate.com/github/18F/samwise/badges/issue_count.svg)](https://codeclimate.com/github/18F/samwise)
 
 ## Description
 
@@ -18,15 +18,15 @@ To get started, you'll need an API key from https://api.data.gov.
 
 ### Configuration
 
-Set the api.data.gov API key as the environment variable `DATA_GOV_API_KEY` or pass the key as an argument:
+Set the api.data.gov API key as the environment variable `'DATA_DOT_GOV_API_KEY'` or pass the key as an argument:
 
 ```ruby
-require 'tarly'
+require 'samwise'
 
-client = Tarly::Sam.new(api_key: 'my key ...')
+client = Samwise::Client.new(api_key: 'my key ...')
 
-# if you set the DATA_GOV_API_KEY env var, just use:
-client = Tarly::Sam.new
+# if you set the 'DATA_DOT_GOV_API_KEY' env var, just use:
+client = Samwise::Client.new
 ```
 
 ### Verify DUNS number
@@ -79,13 +79,13 @@ client.get_duns_info(duns: '080037478')
 In your Gemfile:
 
 ```ruby
-gem 'tarly', github: '18f/tarly'
+gem 'samwise', github: '18f/samwise'
 ```
 
 ### Coming Soon
 
 ```
-$ gem install tarly
+$ gem install samwise
 ```
 
 ## Public Domain
