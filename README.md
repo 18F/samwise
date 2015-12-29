@@ -3,8 +3,10 @@
 * [Homepage](https://rubygems.org/gems/tarly)
 * [Documentation](http://rubydoc.info/gems/tarly/frames)
 
-[![Build Status](https://secure.travis-ci.org//tarly.svg?branch=master)](https://travis-ci.org//tarly)
-[![Code Climate GPA](https://codeclimate.com/github//tarly/badges/gpa.svg)](https://codeclimate.com/github//tarly)
+[![Build Status](https://travis-ci.org/18F/tarly.svg)](https://travis-ci.org/18F/tarly)
+[![Code Climate](https://codeclimate.com/github/18F/tarly/badges/gpa.svg)](https://codeclimate.com/github/18F/tarly)
+[![Test Coverage](https://codeclimate.com/github/18F/tarly/badges/coverage.svg)](https://codeclimate.com/github/18F/tarly/coverage)
+[![Issue Count](https://codeclimate.com/github/18F/tarly/badges/issue_count.svg)](https://codeclimate.com/github/18F/tarly)
 
 ## Description
 
@@ -16,7 +18,7 @@ To get started, you'll need an API key from https://api.data.gov.
 
 ### Configuration
 
-Set the api.data.gov API key as the environment variable `DOT_DATA_GOV_API_KEY` or pass the key as an argument:
+Set the api.data.gov API key as the environment variable `DATA_GOV_API_KEY` or pass the key as an argument:
 
 ```ruby
 require 'tarly'

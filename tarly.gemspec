@@ -7,11 +7,11 @@ require 'tarly/version'
 Gem::Specification.new do |gem|
   gem.name          = "tarly"
   gem.version       = Tarly::VERSION
-  gem.summary       = %q{TODO: Summary}
-  gem.description   = %q{TODO: Description}
-  gem.license       = "MIT"
+  gem.summary       = %q{Ruby access to the SAM.gov API}
+  gem.description   = %q{A Ruby library that provides access to the SAM.gov API}
+  gem.license       = "Public Domain. See CONTRIBUTING.md."
   gem.authors       = ["Alan deLevie"]
-  gem.email         = "adelevie@gmail.com"
+  gem.email         = "alan.delevie@gsa.gov"
   gem.homepage      = "https://rubygems.org/gems/tarly"
 
   gem.files         = `git ls-files`.split($/)
@@ -29,7 +29,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_development_dependency 'bundler', '~> 1.10'
   gem.add_development_dependency 'codeclimate-test-reporter', '~> 0.1'
   gem.add_development_dependency 'rake', '~> 10.0'
   gem.add_development_dependency 'rdoc', '~> 4.0'
