@@ -18,7 +18,7 @@ To get started, you'll need an API key from https://api.data.gov.
 
 ### Configuration
 
-Set the api.data.gov API key as the environment variable `DOT_DATA_GOV_API_KEY` or pass the key as an argument:
+Set the api.data.gov API key as the environment variable `DATA_GOV_API_KEY` or pass the key as an argument:
 
 ```ruby
 require 'tarly'
