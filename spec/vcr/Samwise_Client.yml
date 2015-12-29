@@ -2,277 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.data.gov/sam/v1/registrations/8091025070000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 29 Dec 2015 18:17:54 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4908'
-      Content-Length:
-      - '1416'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"disasterRelief":{"type":"ANY"},"dunsPlus4":"0000","activationDate":"2015-11-27
-        08:50:04.0","fiscalYearEndCloseDate":"12/31","businessTypes":["QZ","XS","VW","2X","27","23","A620240406"],"pastPerformancePoc":{"lastName":"MECCIA","address":{"Line1":"600
-        19th St NW","Zip":"20431","Country":"USA","City":"Washington","stateorProvince":"DC"},"email":"MECCIAMJ@STATE.GOV","usPhone":"2024857820","firstName":"MICHAEL"},"registrationDate":"2008-08-17
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=%2Fu1xa%2BQ3kIHzuUTaKg0tHCljxw4%2B5hZ9MKCqYTccRTEJn%2BlHXdvXp7AcVZ5mGbnX&pitId=ok2ue51uxYAv5QR0ZFfmDVCglsSaOk59QnuTRwATtyGm2rg0H5L5iXnqwH6oNJ%2FBSTWrvMAIvNP7%0AMwFYtJ1ZqA%3D%3D&requestId=yD5q7nM1Rwnnacj"},"hasDelinquentFederalDebt":false,"duns":"809102507","altElectronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lnae","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"cage":"561R4","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-11-25
-        18:48:10.0","altPastPerformancePoc":{"lastName":"KAUL","address":{"Line1":"1801
-        North Lynn Street","Zip":"22209","Country":"USA","City":"Rosslyn","stateorProvince":"VA"},"email":"KAULN@STATE.GOV","usPhone":"5713459854","firstName":"NISHA"},"status":"ACTIVE","corporateStructureCode":"2L","corporateStructureName":"Corporate
-        Entity (Not Tax Exempt)","stateOfIncorporation":"MD","legalBusinessName":"XFINION
-        INC.","congressionalDistrict":"MD 06","businessStartDate":"2005-09-16","lastUpdateDate":"2015-11-27
-        08:50:04.0","statusMessage":"Active","samAddress":{"Zip4":"6933","Line1":"7800
-        LONESOME PINE LN","Zip":"20817","Country":"USA","City":"BETHESDA","stateorProvince":"MD"},"submissionDate":"2015-11-26
-        18:48:10.0","naics":[{"isPrimary":false,"naicsCode":"541519","naicsName":"OTHER
-        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
-        PUBLISHERS"},{"isPrimary":true,"naicsCode":"541511","naicsName":"CUSTOM COMPUTER
-        PROGRAMMING SERVICES"},{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"}],"corporateUrl":"http://www.XFinion.com","altGovtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"creditCardUsage":true,"countryOfIncorporation":"USA","divisionNumber":"XFinion","electronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"mailingAddress":{"Line1":"7800
-        lonesome pine ln","Zip":"20817","Country":"USA","City":"Bethesda","stateorProvince":"MD"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Tue, 29 Dec 2015 18:17:54 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0783270180000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 29 Dec 2015 18:17:54 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4900'
-      Content-Length:
-      - '1267'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9787766968","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"dunsPlus4":"0000","activationDate":"2015-03-29
-        15:45:03.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2011-12-27
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=wH4T%2F3UXRWYNJTaRhNEKNy1kMQZVMPYq4Sbd8YUEUSGqM2bob5HOhhOWA7LPU0mg&pitId=21LR2SO8cCGJW3jwJL9g%2FSnmj%2FTOgTt2%2FAw2%2BJm6E%2BcqNWG6gdssP0YkYEpJ2CVy&requestId=5jxk1zfL99GfD8n"},"pscCodes":[{"pscName":"R&D-
-        GENERAL SCIENCE/TECHNOLOGY: MATHEMATICAL/COMPUTER SCIENCES (BASIC RESEARCH)","pscCode":"AJ21"},{"pscName":"R&D-
-        GENERAL SCIENCE/TECHNOLOGY: MATHEMATICAL/COMPUTER SCIENCES (APPLIED RESEARCH/EXPLORATORY
-        DEVELOPMENT)","pscCode":"AJ22"},{"pscName":"R&D- GENERAL SCIENCE/TECHNOLOGY:
-        MATHEMATICAL/COMPUTER SCIENCES (ADVANCED DEVELOPMENT)","pscCode":"AJ23"}],"hasDelinquentFederalDebt":false,"duns":"078327018","cage":"6M6Y4","altElectronicBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9783710046","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MARKCREYNOLDS@COMCAST.NET","middleInitial":"C","usPhone":"9783710046","firstName":"MARK"},"hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-03-28
-        15:35:18.0","status":"ACTIVE","corporateStructureCode":"2K","stateOfIncorporation":"MA","corporateStructureName":"Partnership
-        or Limited Liability Partnership","legalBusinessName":"ISLAND PEAK SOFTWARE
-        LLC","congressionalDistrict":"MA 03","businessStartDate":"2011-11-30","statusMessage":"Active","lastUpdateDate":"2015-03-30
-        16:16:49.0","samAddress":{"Zip4":"2799","Line1":"328 VIRGINIA RD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"submissionDate":"2015-03-29
-        15:35:18.0","naics":[{"isPrimary":true,"naicsCode":"541712","naicsName":"RESEARCH
-        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"},{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"}],"corporateUrl":"www.islandpeaksoftware.com","altGovtBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9783710046","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MARKCREYNOLDS@COMCAST.NET","middleInitial":"C","usPhone":"9783710046","firstName":"MARK"},"creditCardUsage":false,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9787766968","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"mailingAddress":{"Zip4":"2799","Line1":"328
-        VIRGINIA ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Tue, 29 Dec 2015 18:17:54 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0223841150000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 29 Dec 2015 18:17:54 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4907'
-      Content-Length:
-      - '2003'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GREMILLION","usPhoneExt":"1112","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"RICK.GREMILLION@GEOCENT.COM","usPhone":"5048311900","firstName":"RICHARD"},"dunsPlus4":"0000","activationDate":"2015-08-06
-        09:31:21.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2009-09-02
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=hgwYypOAfDq8gWRpYOMH9uO607r6WIbxAk%2B08gOg%2FA%2BL6QzahsXnkSm781JUtCmE&pitId=YFPNioasT%2BNjdErFxcl%2BH9Qte4YIbGvDpgSPTQ3m%2BMch%2FQYJt%2BGP%2FBaLJh%2BMrn%2Fj&requestId=Q4806E3Lyz6CJjs"},"pscCodes":[{"pscName":"SUPPORT-
-        PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT","pscCode":"R408"},{"pscName":"SUPPORT-
-        PROFESSIONAL: PERSONAL SERVICES CONTRACTS","pscCode":"R497"},{"pscName":"SUPPORT-
-        PROFESSIONAL: TECHNOLOGY SHARING/UTILIZATION","pscCode":"R415"},{"pscName":"SUPPORT-
-        PROFESSIONAL: ENGINEERING/TECHNICAL","pscCode":"R425"},{"pscName":"SUPPORT-
-        PROFESSIONAL: OTHER","pscCode":"R499"}],"hasDelinquentFederalDebt":false,"duns":"022384115","cage":"5NYU1","altElectronicBusinessPoc":{"lastName":"TOMENY","usPhoneExt":"1150","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"JEFF.TOMENY@GEOCENT.COM","usPhone":"5048311900","firstName":"JEFF"},"hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-08-05
-        09:20:57.0","status":"ACTIVE","corporateStructureCode":"2K","stateOfIncorporation":"LA","corporateStructureName":"Partnership
-        or Limited Liability Partnership","legalBusinessName":"Geocent, L.L.C. ","congressionalDistrict":"LA
-        01","businessStartDate":"2008-03-31","statusMessage":"Active","lastUpdateDate":"2015-08-06
-        09:31:21.0","samAddress":{"Zip4":"3044","Line1":"111 Veterans Memorial Blvd
-        Ste 1600 ","Zip":"70005","Country":"USA","City":"Metairie","stateorProvince":"LA"},"submissionDate":"2015-08-06
-        09:20:57.0","naics":[{"isPrimary":false,"naicsCode":"811212","naicsName":"COMPUTER
-        AND OFFICE MACHINE REPAIR AND MAINTENANCE"},{"isPrimary":false,"naicsCode":"541614","naicsName":"PROCESS,
-        PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"},{"isPrimary":false,"naicsCode":"541519","naicsName":"OTHER
-        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"927110","naicsName":"SPACE
-        RESEARCH AND TECHNOLOGY"},{"isPrimary":false,"naicsCode":"336415","naicsName":"GUIDED
-        MISSILE AND SPACE VEHICLE PROPULSION UNIT AND PROPULSION UNIT PARTS MANUFACTURING"},{"isPrimary":false,"naicsCode":"611420","naicsName":"COMPUTER
-        TRAINING"},{"isPrimary":false,"naicsCode":"517110","naicsName":"WIRED TELECOMMUNICATIONS
-        CARRIERS"},{"isPrimary":false,"naicsCode":"541612","naicsName":"HUMAN RESOURCES
-        CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
-        PUBLISHERS"},{"isPrimary":false,"naicsCode":"541611","naicsName":"ADMINISTRATIVE
-        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541513","naicsName":"COMPUTER
-        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":"541720","naicsName":"RESEARCH
-        AND DEVELOPMENT IN THE SOCIAL SCIENCES AND HUMANITIES"},{"isPrimary":false,"naicsCode":"561110","naicsName":"OFFICE
-        ADMINISTRATIVE SERVICES"},{"isPrimary":false,"naicsCode":"561621","naicsName":"SECURITY
-        SYSTEMS SERVICES (EXCEPT LOCKSMITHS)"},{"isPrimary":false,"naicsCode":"541712","naicsName":"RESEARCH
-        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"},{"isPrimary":false,"naicsCode":"561330","naicsName":"PROFESSIONAL
-        EMPLOYER ORGANIZATIONS"},{"isPrimary":false,"naicsCode":"611430","naicsName":"PROFESSIONAL
-        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isPrimary":false,"naicsCode":"561210","naicsName":"FACILITIES
-        SUPPORT SERVICES"},{"isPrimary":false,"naicsCode":"561311","naicsName":"EMPLOYMENT
-        PLACEMENT AGENCIES"},{"isPrimary":false,"naicsCode":"541430","naicsName":"GRAPHIC
-        DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"519130","naicsName":"INTERNET
-        PUBLISHING AND BROADCASTING AND WEB SEARCH PORTALS"},{"isPrimary":true,"naicsCode":"541330","naicsName":"ENGINEERING
-        SERVICES"},{"isPrimary":false,"naicsCode":"332312","naicsName":"FABRICATED
-        STRUCTURAL METAL MANUFACTURING"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"561320","naicsName":"TEMPORARY
-        HELP SERVICES"}],"corporateUrl":"www.geocent.com","altGovtBusinessPoc":{"lastName":"LAMOTTA","usPhoneExt":"1179","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"LORENA.LAMOTTA@GEOCENT.COM","usPhone":"5048311900","firstName":"LORENA"},"creditCardUsage":false,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"MURRAY","usPhoneExt":"1142","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"CONTRACTS@GEOCENT.COM","middleInitial":"S.","usPhone":"5048311900","firstName":"CATHERINE"},"mailingAddress":{"Line2":"Suite
-        1600","Zip4":"3044","Line1":"111 VETERANS MEMORIAL BLVD","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Tue, 29 Dec 2015 18:17:54 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0000001000000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 29 Dec 2015 18:17:55 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4906'
-      Content-Length:
-      - '100'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
-        Found"}'
-    http_version: 
-  recorded_at: Tue, 29 Dec 2015 18:17:55 GMT
-- request:
-    method: get
     uri: https://api.data.gov/sam/v1/registrations/8091025070000?api_key=
     body:
       encoding: US-ASCII
@@ -451,4 +180,275 @@ http_interactions:
         }
     http_version: 
   recorded_at: Tue, 29 Dec 2015 22:10:13 GMT
-recorded_with: VCR 3.0.1
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/8091025070000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:17:51 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4896'
+      Content-Length:
+      - '1418'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
+        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"disasterRelief":{"type":"ANY"},"dunsPlus4":"0000","activationDate":"2015-11-27
+        08:50:04.0","fiscalYearEndCloseDate":"12/31","businessTypes":["QZ","XS","VW","2X","27","23","A620240406"],"pastPerformancePoc":{"lastName":"MECCIA","address":{"Line1":"600
+        19th St NW","Zip":"20431","Country":"USA","City":"Washington","stateorProvince":"DC"},"email":"MECCIAMJ@STATE.GOV","usPhone":"2024857820","firstName":"MICHAEL"},"registrationDate":"2008-08-17
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=O65Y2vmSLpZC4QP4%2BMYzVdllJhATH31debEqvUb628jK%2Fu9HCIEHRWq%2BOqN8aTgg&pitId=Aq3b8eh7ABQZTfXMApF6SUfR3zpdw7Bn9vwi6ups0%2B%2Fqd0prdUwoqKN7zaWmcfgazvC0p%2BU2El%2BE%0AfW%2Fx2e4aQg%3D%3D&requestId=P9mf7IA81Q1zAn7"},"hasDelinquentFederalDebt":false,"duns":"809102507","altElectronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
+        Pebble Hill Lnae","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"cage":"561R4","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-11-25
+        18:48:10.0","altPastPerformancePoc":{"lastName":"KAUL","address":{"Line1":"1801
+        North Lynn Street","Zip":"22209","Country":"USA","City":"Rosslyn","stateorProvince":"VA"},"email":"KAULN@STATE.GOV","usPhone":"5713459854","firstName":"NISHA"},"status":"ACTIVE","corporateStructureCode":"2L","corporateStructureName":"Corporate
+        Entity (Not Tax Exempt)","stateOfIncorporation":"MD","legalBusinessName":"XFINION
+        INC.","congressionalDistrict":"MD 06","businessStartDate":"2005-09-16","lastUpdateDate":"2015-11-27
+        08:50:04.0","statusMessage":"Active","samAddress":{"Zip4":"6933","Line1":"7800
+        LONESOME PINE LN","Zip":"20817","Country":"USA","City":"BETHESDA","stateorProvince":"MD"},"submissionDate":"2015-11-26
+        18:48:10.0","naics":[{"isPrimary":false,"naicsCode":"541519","naicsName":"OTHER
+        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
+        PUBLISHERS"},{"isPrimary":true,"naicsCode":"541511","naicsName":"CUSTOM COMPUTER
+        PROGRAMMING SERVICES"},{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA
+        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
+        SYSTEMS DESIGN SERVICES"}],"corporateUrl":"http://www.XFinion.com","altGovtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
+        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"creditCardUsage":true,"countryOfIncorporation":"USA","divisionNumber":"XFinion","electronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
+        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"mailingAddress":{"Line1":"7800
+        lonesome pine ln","Zip":"20817","Country":"USA","City":"Bethesda","stateorProvince":"MD"},"purposeOfRegistration":"ALL_AWARDS"}}}'
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:17:53 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0783270180000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '1'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:17:52 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4896'
+      Content-Length:
+      - '1291'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
+        ENGINEER","fax":"9787766968","address":{"Zip4":"2799","Line1":"328 VIRGINIA
+        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"dunsPlus4":"0000","activationDate":"2015-03-29
+        15:45:03.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2011-12-27
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=PCNW16NzwdnjzNB13TIio6hBdFa276W51xGsyOBYiX5GrgJhThLYvSugeesI1aM5&pitId=vrKqyyTxwFcjJPaAu8Bcazbrc6%2FLIKDcXdWzvDKgMUOeq7oomukW5jpIIoQzZn9cfexZNKqetCEm%0AlF%2FF0MhB8g%3D%3D&requestId=zU8Lj4quyxXZC4X"},"pscCodes":[{"pscName":"R&D-
+        GENERAL SCIENCE/TECHNOLOGY: MATHEMATICAL/COMPUTER SCIENCES (BASIC RESEARCH)","pscCode":"AJ21"},{"pscName":"R&D-
+        GENERAL SCIENCE/TECHNOLOGY: MATHEMATICAL/COMPUTER SCIENCES (APPLIED RESEARCH/EXPLORATORY
+        DEVELOPMENT)","pscCode":"AJ22"},{"pscName":"R&D- GENERAL SCIENCE/TECHNOLOGY:
+        MATHEMATICAL/COMPUTER SCIENCES (ADVANCED DEVELOPMENT)","pscCode":"AJ23"}],"hasDelinquentFederalDebt":false,"duns":"078327018","cage":"6M6Y4","altElectronicBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
+        ENGINEER","fax":"9783710046","address":{"Zip4":"2799","Line1":"328 VIRGINIA
+        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MARKCREYNOLDS@COMCAST.NET","middleInitial":"C","usPhone":"9783710046","firstName":"MARK"},"hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-03-28
+        15:35:18.0","status":"ACTIVE","corporateStructureCode":"2K","stateOfIncorporation":"MA","corporateStructureName":"Partnership
+        or Limited Liability Partnership","legalBusinessName":"ISLAND PEAK SOFTWARE
+        LLC","congressionalDistrict":"MA 03","businessStartDate":"2011-11-30","statusMessage":"Active","lastUpdateDate":"2015-03-30
+        16:16:49.0","samAddress":{"Zip4":"2799","Line1":"328 VIRGINIA RD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"submissionDate":"2015-03-29
+        15:35:18.0","naics":[{"isPrimary":true,"naicsCode":"541712","naicsName":"RESEARCH
+        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"},{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM
+        COMPUTER PROGRAMMING SERVICES"}],"corporateUrl":"www.islandpeaksoftware.com","altGovtBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
+        ENGINEER","fax":"9783710046","address":{"Zip4":"2799","Line1":"328 VIRGINIA
+        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MARKCREYNOLDS@COMCAST.NET","middleInitial":"C","usPhone":"9783710046","firstName":"MARK"},"creditCardUsage":false,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
+        ENGINEER","fax":"9787766968","address":{"Zip4":"2799","Line1":"328 VIRGINIA
+        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"mailingAddress":{"Zip4":"2799","Line1":"328
+        VIRGINIA ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:17:53 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0223841150000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:17:52 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4893'
+      Content-Length:
+      - '1998'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GREMILLION","usPhoneExt":"1112","fax":"5048311901","address":{"Line2":"STE.
+        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"RICK.GREMILLION@GEOCENT.COM","usPhone":"5048311900","firstName":"RICHARD"},"dunsPlus4":"0000","activationDate":"2015-08-06
+        09:31:21.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2009-09-02
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=5ps2K%2BldaCjKxB%2FTvGDLIyaiIpbCniFyLbpC77HyKSsSkhOWIoVWJF6RD2arG%2Fvi&pitId=%2FIFf33A8ZMw%2FXmwjtmbRFjOcXSk4xYCMZc6KYCilw05vYIuqBvRqRx3Kq1SjcWeP&requestId=09YluCc9tJ6R14A"},"pscCodes":[{"pscName":"SUPPORT-
+        PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT","pscCode":"R408"},{"pscName":"SUPPORT-
+        PROFESSIONAL: PERSONAL SERVICES CONTRACTS","pscCode":"R497"},{"pscName":"SUPPORT-
+        PROFESSIONAL: TECHNOLOGY SHARING/UTILIZATION","pscCode":"R415"},{"pscName":"SUPPORT-
+        PROFESSIONAL: ENGINEERING/TECHNICAL","pscCode":"R425"},{"pscName":"SUPPORT-
+        PROFESSIONAL: OTHER","pscCode":"R499"}],"hasDelinquentFederalDebt":false,"duns":"022384115","cage":"5NYU1","altElectronicBusinessPoc":{"lastName":"TOMENY","usPhoneExt":"1150","fax":"5048311901","address":{"Line2":"STE.
+        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"JEFF.TOMENY@GEOCENT.COM","usPhone":"5048311900","firstName":"JEFF"},"hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-08-05
+        09:20:57.0","status":"ACTIVE","corporateStructureCode":"2K","stateOfIncorporation":"LA","corporateStructureName":"Partnership
+        or Limited Liability Partnership","legalBusinessName":"Geocent, L.L.C. ","congressionalDistrict":"LA
+        01","businessStartDate":"2008-03-31","statusMessage":"Active","lastUpdateDate":"2015-08-06
+        09:31:21.0","samAddress":{"Zip4":"3044","Line1":"111 Veterans Memorial Blvd
+        Ste 1600 ","Zip":"70005","Country":"USA","City":"Metairie","stateorProvince":"LA"},"submissionDate":"2015-08-06
+        09:20:57.0","naics":[{"isPrimary":false,"naicsCode":"811212","naicsName":"COMPUTER
+        AND OFFICE MACHINE REPAIR AND MAINTENANCE"},{"isPrimary":false,"naicsCode":"541614","naicsName":"PROCESS,
+        PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM
+        COMPUTER PROGRAMMING SERVICES"},{"isPrimary":false,"naicsCode":"541519","naicsName":"OTHER
+        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"927110","naicsName":"SPACE
+        RESEARCH AND TECHNOLOGY"},{"isPrimary":false,"naicsCode":"336415","naicsName":"GUIDED
+        MISSILE AND SPACE VEHICLE PROPULSION UNIT AND PROPULSION UNIT PARTS MANUFACTURING"},{"isPrimary":false,"naicsCode":"611420","naicsName":"COMPUTER
+        TRAINING"},{"isPrimary":false,"naicsCode":"517110","naicsName":"WIRED TELECOMMUNICATIONS
+        CARRIERS"},{"isPrimary":false,"naicsCode":"541612","naicsName":"HUMAN RESOURCES
+        CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
+        PUBLISHERS"},{"isPrimary":false,"naicsCode":"541611","naicsName":"ADMINISTRATIVE
+        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541513","naicsName":"COMPUTER
+        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":"541720","naicsName":"RESEARCH
+        AND DEVELOPMENT IN THE SOCIAL SCIENCES AND HUMANITIES"},{"isPrimary":false,"naicsCode":"561110","naicsName":"OFFICE
+        ADMINISTRATIVE SERVICES"},{"isPrimary":false,"naicsCode":"561621","naicsName":"SECURITY
+        SYSTEMS SERVICES (EXCEPT LOCKSMITHS)"},{"isPrimary":false,"naicsCode":"541712","naicsName":"RESEARCH
+        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"},{"isPrimary":false,"naicsCode":"561330","naicsName":"PROFESSIONAL
+        EMPLOYER ORGANIZATIONS"},{"isPrimary":false,"naicsCode":"611430","naicsName":"PROFESSIONAL
+        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isPrimary":false,"naicsCode":"561210","naicsName":"FACILITIES
+        SUPPORT SERVICES"},{"isPrimary":false,"naicsCode":"561311","naicsName":"EMPLOYMENT
+        PLACEMENT AGENCIES"},{"isPrimary":false,"naicsCode":"541430","naicsName":"GRAPHIC
+        DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"519130","naicsName":"INTERNET
+        PUBLISHING AND BROADCASTING AND WEB SEARCH PORTALS"},{"isPrimary":true,"naicsCode":"541330","naicsName":"ENGINEERING
+        SERVICES"},{"isPrimary":false,"naicsCode":"332312","naicsName":"FABRICATED
+        STRUCTURAL METAL MANUFACTURING"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
+        SYSTEMS DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"561320","naicsName":"TEMPORARY
+        HELP SERVICES"}],"corporateUrl":"www.geocent.com","altGovtBusinessPoc":{"lastName":"LAMOTTA","usPhoneExt":"1179","fax":"5048311901","address":{"Line2":"STE.
+        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"LORENA.LAMOTTA@GEOCENT.COM","usPhone":"5048311900","firstName":"LORENA"},"creditCardUsage":false,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"MURRAY","usPhoneExt":"1142","fax":"5048311901","address":{"Line2":"STE.
+        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"CONTRACTS@GEOCENT.COM","middleInitial":"S.","usPhone":"5048311900","firstName":"CATHERINE"},"mailingAddress":{"Line2":"Suite
+        1600","Zip4":"3044","Line1":"111 VETERANS MEMORIAL BLVD","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:17:53 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0000001000000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:17:52 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4895'
+      Content-Length:
+      - '100'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
+        Found"}'
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:17:53 GMT
+recorded_with: VCR 2.9.3

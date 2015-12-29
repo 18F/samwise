@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'samwise'
 
-describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :all } do
+describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_episodes } do
   let(:api_key)           { ENV['DATA_DOT_GOV_API_KEY'] }
   let(:nine_duns)         { '809102507' }
   let(:eight_duns)        { '78327018' }
