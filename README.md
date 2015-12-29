@@ -18,14 +18,14 @@ To get started, you'll need an API key from https://api.data.gov.
 
 ### Configuration
 
-Set the api.data.gov API key as the environment variable `DATA_GOV_API_KEY` or pass the key as an argument:
+Set the api.data.gov API key as the environment variable `'DATA_DOT_GOV_API_KEY'` or pass the key as an argument:
 
 ```ruby
 require 'samwise'
 
 client = Samwise::Client.new(api_key: 'my key ...')
 
-# if you set the DATA_GOV_API_KEY env var, just use:
+# if you set the 'DATA_DOT_GOV_API_KEY' env var, just use:
 client = Samwise::Client.new
 ```
 
