@@ -1,8 +1,8 @@
 require 'faraday'
 require 'json'
 
-module Tarly
-  class Sam
+module Samwise
+  class Client
     def initialize(api_key: api_key)
       @api_key = api_key || ENV['DATA_DOT_GOV_API_KEY']
     end
@@ -20,8 +20,8 @@ module Tarly
     private
 
     def lookup_duns(duns: duns)
-      duns = Tarly::Util.format_duns(duns: duns)
-      response = Faraday.get(Tarly::Protocol.duns_url(duns: duns, api_key: @api_key))
+      duns = Samwise::Util.format_duns(duns: duns)
+      response = Faraday.get(Samwise::Protocol.duns_url(duns: duns, api_key: @api_key))
     end
   end
 end

@@ -1,10 +1,10 @@
 require 'rspec'
-require 'tarly/version'
+require 'samwise/version'
 require 'rspec/expectations'
 require 'uri'
 require 'vcr'
 
-include Tarly
+include Samwise
 
 RSpec::Matchers.define :be_a_valid_url do
   match do |actual|

@@ -271,4 +271,184 @@ http_interactions:
         Found"}'
     http_version: 
   recorded_at: Tue, 29 Dec 2015 18:17:55 GMT
-recorded_with: VCR 2.9.3
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/8091025070000?api_key=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:10:13 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "error": {
+            "code": "API_KEY_MISSING",
+            "message": "No api_key was supplied. Get one at https://api.data.gov"
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:10:13 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0783270180000?api_key=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:10:13 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "error": {
+            "code": "API_KEY_MISSING",
+            "message": "No api_key was supplied. Get one at https://api.data.gov"
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:10:13 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0223841150000?api_key=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:10:13 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "error": {
+            "code": "API_KEY_MISSING",
+            "message": "No api_key was supplied. Get one at https://api.data.gov"
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:10:13 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0000001000000?api_key=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Dec 2015 22:10:13 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - MISS
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "error": {
+            "code": "API_KEY_MISSING",
+            "message": "No api_key was supplied. Get one at https://api.data.gov"
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:10:13 GMT
+recorded_with: VCR 3.0.1
