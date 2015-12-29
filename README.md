@@ -25,7 +25,7 @@ require 'tarly'
 
 client = Tarly::Sam.new(api_key: 'my key ...')
 
-# if you set the DOT_DATA_GOV_API_KEY env var, just use:
+# if you set the DATA_GOV_API_KEY env var, just use:
 client = Tarly::Sam.new
 ```
 
