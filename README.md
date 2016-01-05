@@ -107,6 +107,29 @@ Samwise::Util.format_duns(duns: '08-011-5718')
 - If it is 9 digits, `0000` is added to the end.
 - If it is 13 digits, the number is unchanged.
 
+### Check status in SAM.gov
+
+There is a web form where anyone can enter a DUNS number to get its status within SAM.gov: https://www.sam.gov/sam/helpPage/SAM_Reg_Status_Help_Page.html.
+
+This form uses an undocumented/unpublished JSON endpoint. This gem provides Ruby access to that endpoint.
+
+This does not require an api.data.gov API key, but it will make a network call to the above URL.
+
+The SAM.gov status web form hard codes what appears to be an API key. That key is used by default in this gem. However, you may supply your own (also tell us where you got it!).
+
+```ruby
+client = Samwise::Client.new(sam_status_key:  'optional')
+client.get_sam_status(duns: '08-011-5718')
+
+#=> {
+  "Message" => "Request for registration information forbidden",
+  "Code" => 403,
+  "Error" => ""
+}
+
+client.get_sam_status(duns: )
+```
+
 ## Install
 
 In your Gemfile:
