@@ -29,10 +29,10 @@ client = Samwise::Client.new(api_key: 'my key ...')
 client = Samwise::Client.new
 ```
 
-### Verify DUNS number
+### Verify DUNS number is in SAM.gov
 
 ```ruby
-client.duns_is_valid?(duns: '080037478')
+client.duns_is_in_sam?(duns: '080037478')
 #=> true
 ```
 
@@ -68,7 +68,40 @@ client.get_duns_info(duns: '080037478')
 }
 ```
 
-`duns` can be an 8, 9, or 13 digit number:
+### Validate the format of a DUNS number
+
+This does not need an API key and makes no network calls.
+
+```ruby
+Samwise::Util.duns_is_properly_formatted?(duns: '88371771')
+#=> true
+
+Samwise::Util.duns_is_properly_formatted?(duns: '883717717')
+#=> true
+
+Samwise::Util.duns_is_properly_formatted?(duns: '0223841150000')
+#=> true
+
+Samwise::Util.duns_is_properly_formatted?(duns: '08-011-5718')
+#=> true
+
+Samwise::Util.duns_is_properly_formatted?(duns: 'abc1234567')
+#=> false
+
+Samwise::Util.duns_is_properly_formatted?(duns: '1234567891234567890')
+#=> false
+```
+
+### Format a DUNS number
+
+This removes any hyphens and appends `0`s where appropriate (does not need an API key and makes no network calls):
+
+```ruby
+Samwise::Util.format_duns(duns: '08-011-5718')
+#=> "0801157180000"
+```
+
+`duns` can be an 8, 9, or 13 digit number (hyphens are removed):
 
 - If it is 8 digits, `0` is prepended, and `0000` is added to the end.
 - If it is 9 digits, `0000` is added to the end.
