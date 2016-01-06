@@ -8,31 +8,31 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
   let(:thirteen_duns)     { '0223841150000' }
   let(:non_existent_duns) { '0000001000000' }
 
-  context '#duns_is_valid?' do
-    it "should verify that a 9 digit DUNS number exists" do
+  context '#duns_is_in_sam?' do
+    it "should verify that a 9 digit DUNS number exists in sam.gov" do
       client = Samwise::Client.new(api_key: api_key)
-      response = client.duns_is_valid?(duns: nine_duns)
+      response = client.duns_is_in_sam?(duns: nine_duns)
 
       expect(response).to be(true)
     end
 
-    it "should verify that an 8 digit DUNS number exists" do
+    it "should verify that an 8 digit DUNS number exists in sam.gov" do
       client = Samwise::Client.new(api_key: api_key)
-      response = client.duns_is_valid?(duns: eight_duns)
+      response = client.duns_is_in_sam?(duns: eight_duns)
 
       expect(response).to be(true)
     end
 
-    it "should verify that a 13 digit DUNS number exists" do
+    it "should verify that a 13 digit DUNS number exists in sam.gov" do
       client = Samwise::Client.new(api_key: api_key)
-      response = client.duns_is_valid?(duns: thirteen_duns)
+      response = client.duns_is_in_sam?(duns: thirteen_duns)
 
       expect(response).to be(true)
     end
 
-    it "should return false given a non-existent DUNS number" do
+    it "should return false given a DUNS number that is not in sam.gov" do
       client = Samwise::Client.new(api_key: api_key)
-      response = client.duns_is_valid?(duns: non_existent_duns)
+      response = client.duns_is_in_sam?(duns: non_existent_duns)
 
       expect(response).to be(false)
     end
@@ -60,7 +60,7 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
       expect(response).to be_a(Hash)
     end
 
-    it "should return an error given a non-existent DUNS number" do
+    it "should return an error given a DUNS number that is not in sam.gov" do
       client = Samwise::Client.new(api_key: api_key)
       response = client.get_duns_info(duns: non_existent_duns)
 
