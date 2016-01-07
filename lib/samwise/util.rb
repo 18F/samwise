@@ -3,6 +3,8 @@ require 'pry'
 module Samwise
   module Util
     def self.duns_is_properly_formatted?(duns: nil)
+      return false if duns.nil?
+
       duns.gsub!('-', '')
 
       return true if duns_contains_forbidden_characters?(duns: duns)
