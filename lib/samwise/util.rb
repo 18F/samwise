@@ -5,7 +5,7 @@ module Samwise
     def self.duns_is_properly_formatted?(duns: nil)
       return false if duns.nil?
 
-      duns.gsub!('-', '')
+      duns = duns.gsub('-', '')
 
       return true if duns_contains_forbidden_characters?(duns: duns)
 
@@ -19,7 +19,7 @@ module Samwise
     def self.format_duns(duns: nil)
       raise Samwise::Error::InvalidFormat unless duns_is_properly_formatted?(duns: duns)
 
-      duns.gsub!('-', '')
+      duns = duns.gsub('-', '')
 
       if duns_is_nine_digits?(duns: duns)
         duns = "#{duns}0000"

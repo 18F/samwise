@@ -60,6 +60,13 @@ describe Samwise::Util do
   end
 
   context '#format_duns' do
+    it 'should not suffer from mutability side effects' do
+      duns_copy = hyphen_duns.dup
+      Samwise::Util.format_duns(duns: hyphen_duns)
+
+      expect(hyphen_duns).to eq(duns_copy)
+    end
+
     it 'should format an 8 digit DUNS into a 13 digit DUNS' do
       formatted_duns = Samwise::Util.format_duns(duns: eight_duns)
 
