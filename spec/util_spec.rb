@@ -51,6 +51,12 @@ describe Samwise::Util do
 
       expect(is_formatted).to be(false)
     end
+
+    it 'should return false when the duns number is nil' do
+      is_formatted = Samwise::Util.duns_is_properly_formatted?(duns: nil)
+
+      expect(is_formatted).to be(false)
+    end
   end
 
   context '#format_duns' do
