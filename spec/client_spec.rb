@@ -113,6 +113,12 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
         end.to raise_error(Samwise::Error::InvalidFormat)
       end
     end
+  end
 
+  context '#is_excluded?' do
+    it "should verify that vendor in the system is not on the excluded vendor list in sam.gov" do
+      response = client.is_excluded?(duns: nine_duns)
+      expect(response).to be(false)
+    end
   end
 end
