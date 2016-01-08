@@ -25,6 +25,11 @@ module Samwise
       JSON.parse(response.body)
     end
 
+    def is_excluded?(duns: nil)
+      response = lookup_duns(duns: duns)
+      JSON.parse(response.body)["hasKnownExclusion"] == false
+    end
+
     private
 
     def lookup_duns(duns: nil)
