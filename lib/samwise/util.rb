@@ -1,4 +1,3 @@
-require 'pry'
 
 module Samwise
   module Util
