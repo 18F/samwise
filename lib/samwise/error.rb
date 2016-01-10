@@ -5,5 +5,8 @@ module Samwise
         super(message)
       end
     end
+
+    class ArgumentMissing < StandardError
+    end
   end
 end
