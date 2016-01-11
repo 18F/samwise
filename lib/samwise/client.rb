@@ -14,7 +14,8 @@ module Samwise
       JSON.parse(response.body)
     end
 
-    def duns_is_in_sam?(duns: nil)
+    def duns_is_in_sam?(duns: nil, delay: 1)
+      sleep(delay)
       response = lookup_duns(duns: duns)
       response.status == 200
     end
