@@ -36,6 +36,13 @@ client.duns_is_in_sam?(duns: '080037478')
 #=> true
 ```
 
+### Verify Vendor is not on the excluded parties list
+
+```ruby
+client.is_excluded?(duns: '080037478')
+#=> false
+```
+
 ### Get DUNS info
 
 ```ruby
