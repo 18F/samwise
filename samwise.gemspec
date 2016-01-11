@@ -39,5 +39,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'webmock'
 
   gem.add_runtime_dependency 'httpclient'
-  gem.add_runtime_dependency 'faraday'
 end
