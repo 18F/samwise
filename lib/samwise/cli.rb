@@ -36,7 +36,7 @@ module Samwise
     end
 
     #Helpers
-    desc "wrap_sam JSonkeytoadd COMMANDTOPASS", "Opens the client and cli files for all of the calls"
+    desc "private method wrap_sam JSonkeytoadd &block", "Opens the client and cli files for all of the calls"
     def wrap_sam(jsonOutKey, &block)
       #read in a json of users to be samwised
       infile = (STDIN.tty?) ? File.read(options[:infile]) : $stdin.read
@@ -54,5 +54,8 @@ module Samwise
      puts duns_hash.to_json
         
     end
+
+    private :wrap_sam
+
   end
 end
