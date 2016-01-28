@@ -151,6 +151,36 @@ gem 'samwise', github: '18f/samwise'
 $ gem install samwise
 ```
 
+## Command Line Interface
+The samwise gem can be run via command line via a piped in file or with a file input flag.
+
+#### Input Format
+The CLI expects a .json with the following schema:
+
+```json
+{"users":[{"other_keys": "other_values", "duns":"duns_number"}]}
+```
+
+If the JSON does not include a `"duns"` key, the CLI will abort.
+
+The JSON can be piped in or fed in from a file via a `-i` flag. For example:
+```bash
+cat "input_file.json" | samwise verify > output.json
+samwise verify -i "input_file.json" > output.json
+```
+
+#### Output
+The CLI will output a JSON to `STDOUT` with an addition key to be determined by the method run (see below for reference).
+
+#### Available Commands
+| CLI Comand         | Samwise Function                  | JSON OutKey |
+|--------------------|-----------------------------------|-------------|
+| `samwise verify`   | `Samwise::Client.duns_is_in_sam?` | `verified`  |
+| `samwise excluded` | `Samwise::Client.is_excluded?`    | `excluded`  |
+| `samwise get_info` | `Samwise::Client.get_duns_info`   | `sam_data`  |
+| `samwise check_format` | `Samwise::Util.duns_is_properly_formatted?`   | `valid_format`  |
+| `samwise format` | `Samwise::Util.format_duns`   | `formatted_duns`  |
+
 ## Public Domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
