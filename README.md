@@ -154,6 +154,8 @@ $ gem install samwise
 ## Command Line Interface
 The samwise gem can be run via command line via a piped in file or with a file input flag.
 
+To make the gem executable run `gem install samwise` which calls makes the contents of the `bin` directory executable in the gemspec.
+
 #### Input Format
 The CLI expects a .json with the following schema:
 
