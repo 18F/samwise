@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'samwise'
 require 'json'
-require 'Factory'
+require 'factory'
 require 'stringio'
 
 describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episodes } do
@@ -20,53 +20,41 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 		describe ".verify" do
 				let(:method) {:verify}
 				let(:verified_user) {Factory.build_users_json(user_array, [{"verified":true}, {"verified":false}])+"\n"}
-				context "given an -i flagged test.json that includes correct keys" do
-					it "verifies the duns for each user" do
+				it "verifies the duns for each user with streamed infile" do
+						piped_file
 						expect(output(method, goodfile)).to eq(verified_user)
+				end
+				it "verifies the duns for each user when given an -i flagged test.json with duns key" do
+					expect(output(method, goodfile)).to eq(verified_user)
+				end
+
+				it "requests to recieve a good json when recieves json without duns key" do
+					begin
+						err = capture_stderr(output(method, badfile))
+					rescue Exception => e
+						expect(e.to_s).to eq(abort_msg)
 					end
 				end
 
-				context "given piped input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "verifies the duns for each user" do
-							piped_file
-							expect(output(method, goodfile)).to eq(verified_user)
-					end
-				end
-
-				context "given flagged bad json that doesn't include duns keys" do
-					it "it request to recieve a good json" do
-						begin
-							output(method, badfile)
-						rescue Exception => e
-							expect(e.to_s).to eq(abort_msg)
-						end
-					end
-				end
  		end
 
 		describe ".excluded" do
 				let(:method) {:excluded}
 				let(:excluded_user){Factory.build_users_json(user_array, [{"excluded":false}, {"excluded":false}])+"\n"}
-				context "given piped input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "adds a excluded field to " do
-							piped_file
-							expect(output(method, goodfile)).to eq(excluded_user)
-					end
+				it "checks if users are excluded for each user in a streamed infile" do
+						piped_file
+						expect(output(method, goodfile)).to eq(excluded_user)
 				end
 
-				context "given an -i flagged input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "adds a excluded field to " do
-							expect(output(method, goodfile)).to eq(excluded_user)
-					end
+				it "checks if users are excluded when given an -i flagged test.json with duns key" do
+						expect(output(method, goodfile)).to eq(excluded_user)
 				end
 
-				context "given flagged bad json that doesn't include duns keys" do
-					it "it request to recieve a good json" do
-						begin
-							output(method, badfile)
-						rescue Exception => e
-							expect(e.to_s).to eq(abort_msg)
-						end
+				it "requests to recieve a good json when recieves json without duns key" do
+					begin
+						output(method, badfile)
+					rescue Exception => e
+						expect(e.to_s).to eq(abort_msg)
 					end
 				end
 		end
@@ -74,26 +62,20 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 		describe ".get_info" do
 				let(:method){:get_info}
 				let(:expected_info) {"sam_data"}
-				context "given piped input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "gets the users' information and adds to the json " do
-							piped_file
-							expect(output(method, goodfile)).to include(expected_info)
-					end
+				it "gets the users' information for each user in a streamed infile" do
+						piped_file
+						expect(output(method, goodfile)).to include(expected_info)
 				end
 
-				context "given an -i flagged input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "gets the users' information and adds to the json " do
-							expect(output(method, goodfile)).to include(expected_info)
-					end
+				it "gets the users' information and adds to the json when given an -i flagged test.json with duns key" do
+						expect(output(method, goodfile)).to include(expected_info)
 				end
 
-				context "given flagged bad json that doesn't include duns keys" do
-					it "it request to recieve a good json" do
-						begin
-							output(method, badfile)
-						rescue Exception => e
-							expect(e.to_s).to eq(abort_msg)
-						end
+				it "requests to recieve a good json when recieves json without duns key" do
+					begin
+						output(method, badfile)
+					rescue Exception => e
+						expect(e.to_s).to eq(abort_msg)
 					end
 				end
 		end
@@ -101,26 +83,21 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 		describe ".check_format" do
 				let(:method) {:check_format}
 				let(:valid_duns){Factory.build_users_json(user_array, [{"valid_format":true}, {"valid_format":true}])+"\n"}
-				context "given piped input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "verifies that the duns number is formatted " do
-							piped_file
-							expect(output(method, goodfile)).to eq(valid_duns)
-					end
+				it "verifies that the each duns number is formatted for each user in a streamed infile" do
+						piped_file
+						expect(output(method, goodfile)).to eq(valid_duns)
 				end
 
-				context "given an -i flagged input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "verifies that the duns number is formatted " do
-							expect(output(method, goodfile)).to eq(valid_duns)
-					end
+				it "verifies that the each duns number is formatted for -i flagged test.json with duns key" do
+						expect(output(method, goodfile)).to eq(valid_duns)
 				end
-				context "given flagged bad json that doesn't include duns keys" do
-					it "it request to recieve a good json" do
-							begin
-								output(method, badfile)
-							rescue Exception => e
-								expect(e.to_s).to eq(abort_msg)
-							end
-					end
+
+				it "requests to recieve a good json when recieves json without duns key" do
+						begin
+							output(method, badfile)
+						rescue Exception => e
+							expect(e.to_s).to eq(abort_msg)
+						end
 				end
 
 		end
@@ -128,28 +105,21 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 		describe ".format" do
 			let(:method) {:format}
 			let(:format_duns){Factory.build_users_json(user_array, [{"formatted_duns":"0800374780000"}, {"formatted_duns":"0800314780000"}])+"\n"}
-				context "given piped input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "formats duns numbers in a json " do
-							piped_file
-							expect(output(method, goodfile)).to eq(format_duns)
-					end
-				end
+			it "formats duns numbers when streamed in json with users array and duns key" do
+					piped_file
+					expect(output(method, goodfile)).to eq(format_duns)
+			end
 
-				context "given an -i flagged input.json that includes {'users:[{'duns: duns_num'}]'}" do
-					it "formats duns numbers in a json " do
-							expect(output(method, goodfile)).to eq(format_duns)
-					end
-				end
+			it "formats duns numbers when given an -i flagged test.json with duns key " do
+					expect(output(method, goodfile)).to eq(format_duns)
+			end
 
-				context "given flagged bad json that doesn't include duns keys" do
-					it "it request to recieve a good json" do
-						begin
-							output(method, badfile)
-						rescue Exception => e
-							expect(e.to_s).to eq(abort_msg)
-						end
-					end
+			it "requests to recieve a good json when recieves json without duns key" do
+				begin
+					output(method, badfile)
+				rescue Exception => e
+					expect(e.to_s).to eq(abort_msg)
 				end
+			end
 		end
-
 end
