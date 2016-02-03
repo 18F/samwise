@@ -16,7 +16,7 @@ module Samwise
     def excluded
       wrap_sam("excluded"){|c, u, j| u[j] = c.is_excluded?(duns: u['duns'])}
     end
-    
+
     method_option :infile, :aliases => "-i", :desc => "Nonpiped version input"
     desc "get_info", "Get DUNS info"
     def get_info
@@ -38,21 +38,20 @@ module Samwise
     #Helpers
     desc "private method wrap_sam JSonkeytoadd &block", "Opens the client and cli files for all of the calls"
     def wrap_sam(jsonOutKey, &block)
-      #read in a json of users to be samwised
-      infile = (STDIN.tty?) ? File.read(options[:infile]) : $stdin.read
+      infile = ($stdin.tty?) ? File.read(options[:infile]) : $stdin.read       #read in a json of users to be samwised
       duns_hash = JSON.parse(infile)
       #check what method called wrap_sam. Do not init samwise client for utils
       thor_method = caller_locations(1,1)[0].label
       client = Samwise::Client.new unless (thor_method == "check_format") || (jsonOutKey =="format")
 
-        
+
      duns_hash['users'].each do |user|
       #abort process do improperly formated duns
-     abort("please use a .json with a duns key") unless user.has_key?("duns")
-     block.call(client, user, jsonOutKey)
+       abort("please use a .json with a duns key") unless user.has_key?("duns")
+       block.call(client, user, jsonOutKey)
      end
      puts duns_hash.to_json
-        
+
     end
 
     private :wrap_sam
