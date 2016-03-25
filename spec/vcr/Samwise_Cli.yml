@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0800374780000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.7.1, ruby 2.2.1 (2015-02-26))
+      Accept:
+      - "*/*"
+      Date:
+      - Wed, 03 Feb 2016 16:18:20 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Feb 2016 16:18:20 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4999'
+      Content-Length:
+      - '2012'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"SUDOL","address":{"Line1":"4301
+        N HENDERSON RD APT 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"email":"BRENDANSUDOL@GMAIL.COM","usPhone":"5404218332","firstName":"BRENDAN"},"dunsPlus4":"0000","activationDate":"2015-10-30
+        11:42:30.0","fiscalYearEndCloseDate":"12/31","businessTypes":["VW","2X","27"],"registrationDate":"2015-10-28
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=1&orgId=W9hfF7OSUNwKDaFAWfFZYnRXkGmbUzSHqFa0XGdQx%2FQrRuiaqgaGRobWADyRQmon&pitId=%2FiagvMpXNAcdZG%2Bygn7D2P61gHHrSdsNKFUGR72DFVZVJnfbF0L4QPi%2FudytK42M&requestId=61dsi9kL4T3z1Ee"},"hasDelinquentFederalDebt":false,"duns":"080037478","cage":"7H1Y7","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-10-27
+        10:53:02.0","status":"ACTIVE","corporateStructureCode":"2J","stateOfIncorporation":"VA","corporateStructureName":"Sole
+        Proprietorship","legalBusinessName":"Sudol, Brendan","congressionalDistrict":"VA
+        08","businessStartDate":"2015-10-28","statusMessage":"Active","lastUpdateDate":"2015-11-02
+        17:36:23.0","submissionDate":"2015-10-28 10:53:02.0","samAddress":{"Zip4":"2511","Line1":"4301
+        N Henderson Rd Apt 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"naics":[{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA
+        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isPrimary":true,"naicsCode":"541511","naicsName":"CUSTOM
+        COMPUTER PROGRAMMING SERVICES"}],"creditCardUsage":true,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"SUDOL","address":{"Line1":"4301
+        N HENDERSON RD APT 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"email":"BRENDANSUDOL@GMAIL.COM","usPhone":"5404218332","firstName":"BRENDAN"},"mailingAddress":{"Zip4":"2511","Line1":"4301
+        N Henderson Rd Apt 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
+    http_version: 
+  recorded_at: Wed, 03 Feb 2016 16:18:20 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v1/registrations/0800314780000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.7.1, ruby 2.2.1 (2015-02-26))
+      Accept:
+      - "*/*"
+      Date:
+      - Wed, 03 Feb 2016 16:18:20 GMT
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Feb 2016 16:18:21 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4998'
+      Content-Length:
+      - '80'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
+        Found"}'
+    http_version: 
+  recorded_at: Wed, 03 Feb 2016 16:18:20 GMT
+recorded_with: VCR 3.0.1
