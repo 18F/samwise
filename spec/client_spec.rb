@@ -1,6 +1,5 @@
 require 'spec_helper'
 require 'samwise'
-require 'pry'
 
 describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_episodes } do
   let(:api_key)           { ENV['DATA_DOT_GOV_API_KEY'] }
@@ -131,7 +130,7 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
       response = client.is_small_business?(duns: nine_duns, naicsCode: naics_code)
       expect(response).to be(true)
     end
-    
+
     it "should verify that vendor in the system is a small business with full 6-digit naics code" do
       response = client.is_small_business?(duns: nine_duns, naicsCode: full_naics_code)
       expect(response).to be(true)
