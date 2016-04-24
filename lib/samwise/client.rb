@@ -33,6 +33,13 @@ module Samwise
       JSON.parse(response.body)["hasKnownExclusion"] == false
     end
 
+    def is_small_business?(duns: nil, naicsCode: nil)
+      response = lookup_duns(duns: duns)
+      data = JSON.parse(response.body)["sam_data"]["registration"]["certifications"]["farResponses"]
+      small_biz_array = data.find{|far|far["id"]=="FAR 52.219-1"}["answers"].find{"naics"}["naics"]
+      small_biz_array.find{|naics|naics["naicsCode"]==naicsCode}["isSmallBusiness"] == "Y"
+    end
+
     private
 
     def lookup_duns(duns: nil)

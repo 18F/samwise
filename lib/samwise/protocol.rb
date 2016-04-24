@@ -1,7 +1,7 @@
 module Samwise
   module Protocol
     SAM_API_BASE_URL    = 'https://api.data.gov'
-    SAM_API_API_VERSION = 'v1'
+    SAM_API_API_VERSION = 'v4'
     SAM_STATUS_URL      = 'https://www.sam.gov/samdata/registrations/trackProgress'
     SAM_STATUS_KEY      = '1452031543862'
 
