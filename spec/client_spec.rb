@@ -11,7 +11,8 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
   let(:valid_dunses)      { [nine_duns, eight_duns, thirteen_duns] }
   let(:non_existent_duns) { '0000001000000' }
   let(:client)            { Samwise::Client.new(api_key: api_key) }
-  let(:naics_code)        { 541511 }
+  let(:naics_code)        { 54151 }
+  let(:full_naics_code)   { 541511 }
   let(:big_biz_duns)      { '1459697830000' }
   let(:bad_dunses) do
     [
@@ -126,8 +127,13 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
   end
 
   context '#is_small_business?' do
-    it "should verify that vendor in the system is a small business" do
+    it "should verify that vendor in the system is a small business with 5-digit naics code" do
       response = client.is_small_business?(duns: nine_duns, naicsCode: naics_code)
+      expect(response).to be(true)
+    end
+    
+    it "should verify that vendor in the system is a small business with full 6-digit naics code" do
+      response = client.is_small_business?(duns: nine_duns, naicsCode: full_naics_code)
       expect(response).to be(true)
     end
 
