@@ -43,6 +43,13 @@ client.is_excluded?(duns: '080037478')
 #=> false
 ```
 
+### Verify Vendor is a small business
+
+```ruby
+client.is_small_business?(duns: '080037478', naicsCode: 541511)
+#=> false
+```
+
 ### Get DUNS info
 
 ```ruby
