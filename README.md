@@ -108,8 +108,9 @@ Samwise::Util.format_duns(duns: '08-011-5718')
 #=> "0801157180000"
 ```
 
-`duns` can be an 8, 9, or 13 digit number (hyphens are removed):
+`duns` can be a 7, 8, 9, or 13 digit number (hyphens are removed):
 
+- If it is 7 digits, `00` is prepended, and `0000` is added to the end.
 - If it is 8 digits, `0` is prepended, and `0000` is added to the end.
 - If it is 9 digits, `0000` is added to the end.
 - If it is 13 digits, the number is unchanged.
