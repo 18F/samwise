@@ -8,6 +8,7 @@ module Samwise
 
       return true if duns_contains_forbidden_characters?(duns: duns)
 
+      return true if duns_is_seven_digits?(duns: duns)
       return true if duns_is_eight_digits?(duns: duns)
       return true if duns_is_nine_digits?(duns: duns)
       return true if duns_is_thirteen_digits?(duns: duns)
@@ -24,6 +25,8 @@ module Samwise
         duns = "#{duns}0000"
       elsif duns_is_eight_digits?(duns: duns)
         duns = "0#{duns}0000"
+      elsif duns_is_seven_digits?(duns: duns)
+        duns = "00#{duns}0000"
       end
 
       duns
@@ -43,6 +46,10 @@ module Samwise
       end
 
       return true
+    end
+
+    def self.duns_is_seven_digits?(duns: nil)
+      duns.length == 7
     end
 
     def self.duns_is_eight_digits?(duns: nil)

@@ -40,5 +40,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'thor'
 
   gem.add_runtime_dependency 'httpclient'
-  gem.add_runtime_dependency 'faraday'
 end

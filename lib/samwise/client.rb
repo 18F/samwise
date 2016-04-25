@@ -1,4 +1,3 @@
-require 'faraday'
 require 'json'
 require 'httpclient'
 
@@ -7,9 +6,6 @@ module Samwise
     def initialize(api_key: nil, sam_status_key: Samwise::Protocol::SAM_STATUS_KEY)
       @api_key        = api_key        || ENV['DATA_DOT_GOV_API_KEY']
       @sam_status_key = sam_status_key || ENV['SAM_STATUS_KEY']
-      @conn = Faraday.new do |faraday|
-        faraday.adapter :httpclient
-      end
       @client = HTTPClient.new
     end
 
@@ -18,7 +14,8 @@ module Samwise
       JSON.parse(response.body)
     end
 
-    def duns_is_in_sam?(duns: nil)
+    def duns_is_in_sam?(duns: nil, delay: 1)
+      sleep(delay)
       response = lookup_duns(duns: duns)
       response.status == 200
     end

@@ -2,6 +2,7 @@ require 'spec_helper'
 require 'samwise'
 
 describe Samwise::Util do
+  let(:seven_duns)    { '8837177' }
   let(:eight_duns)    { '88371771' }
   let(:nine_duns)     { '883717717' }
   let(:thirteen_duns) { '0223841150000' }
@@ -38,6 +39,12 @@ describe Samwise::Util do
       expect(is_formatted).to be(true)
     end
 
+    it 'should return true when the DUNS is 7 digits (not counting hyphens)' do
+      is_formatted = Samwise::Util.duns_is_properly_formatted?(duns: seven_duns)
+
+      expect(is_formatted).to be(true)
+    end
+
     it 'should return false when the DUNS is not 8, 9, or 13 digits (not counting hyphens)' do
       bad_dunses.each do |bad_duns|
         is_formatted = Samwise::Util.duns_is_properly_formatted?(duns: bad_duns)
@@ -65,6 +72,12 @@ describe Samwise::Util do
       Samwise::Util.format_duns(duns: hyphen_duns)
 
       expect(hyphen_duns).to eq(duns_copy)
+    end
+
+    it 'should format an 7 digit DUNS into a 13 digit DUNS' do
+      formatted_duns = Samwise::Util.format_duns(duns: seven_duns)
+
+      expect(formatted_duns.length).to eq(13)
     end
 
     it 'should format an 8 digit DUNS into a 13 digit DUNS' do
