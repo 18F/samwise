@@ -120,24 +120,24 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
 
   context '#is_excluded?' do
     it "should verify that vendor in the system is not on the excluded vendor list in sam.gov" do
-      response = client.is_excluded?(duns: nine_duns)
+      response = client.excluded?(duns: nine_duns)
       expect(response).to be(false)
     end
   end
 
-  context '#is_small_business?' do
+  context '#small_business?' do
     it "should verify that vendor in the system is a small business with 5-digit naics code" do
-      response = client.is_small_business?(duns: nine_duns, naicsCode: naics_code)
+      response = client.small_business?(duns: nine_duns, naicsCode: naics_code)
       expect(response).to be(true)
     end
 
     it "should verify that vendor in the system is a small business with full 6-digit naics code" do
-      response = client.is_small_business?(duns: nine_duns, naicsCode: full_naics_code)
+      response = client.small_business?(duns: nine_duns, naicsCode: full_naics_code)
       expect(response).to be(true)
     end
 
     it "should verify that vendor in the system is not a small business" do
-      response = client.is_small_business?(duns: big_biz_duns, naicsCode: naics_code)
+      response = client.small_business?(duns: big_biz_duns, naicsCode: naics_code)
       expect(response).to be(false)
     end
   end

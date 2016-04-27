@@ -39,14 +39,14 @@ client.duns_is_in_sam?(duns: '080037478')
 ### Verify Vendor is not on the excluded parties list
 
 ```ruby
-client.is_excluded?(duns: '080037478')
+client.excluded?(duns: '080037478')
 #=> false
 ```
 
 ### Verify Vendor is a small business
 
 ```ruby
-client.is_small_business?(duns: '080037478', naicsCode: 541511)
+client.small_business?(duns: '080037478', naicsCode: 541511)
 #=> false
 ```
 
@@ -185,7 +185,7 @@ The CLI will output a JSON to `STDOUT` with an addition key to be determined by 
 | CLI Comand         | Samwise Function                  | JSON OutKey |
 |--------------------|-----------------------------------|-------------|
 | `samwise verify`   | `Samwise::Client.duns_is_in_sam?` | `verified`  |
-| `samwise excluded` | `Samwise::Client.is_excluded?`    | `excluded`  |
+| `samwise excluded` | `Samwise::Client.excluded?`    | `excluded`  |
 | `samwise get_info` | `Samwise::Client.get_duns_info`   | `sam_data`  |
 | `samwise check_format` | `Samwise::Util.duns_is_properly_formatted?`   | `valid_format`  |
 | `samwise format` | `Samwise::Util.format_duns`   | `formatted_duns`  |
