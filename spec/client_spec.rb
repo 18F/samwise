@@ -10,6 +10,9 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
   let(:valid_dunses)      { [nine_duns, eight_duns, thirteen_duns] }
   let(:non_existent_duns) { '0000001000000' }
   let(:client)            { Samwise::Client.new(api_key: api_key) }
+  let(:naics_code)        { 54151 }
+  let(:full_naics_code)   { 541511 }
+  let(:big_biz_duns)      { '1459697830000' }
   let(:bad_dunses) do
     [
       '1234567890',
@@ -117,7 +120,24 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
 
   context '#is_excluded?' do
     it "should verify that vendor in the system is not on the excluded vendor list in sam.gov" do
-      response = client.is_excluded?(duns: nine_duns)
+      response = client.excluded?(duns: nine_duns)
+      expect(response).to be(false)
+    end
+  end
+
+  context '#small_business?' do
+    it "should verify that vendor in the system is a small business with 5-digit naics code" do
+      response = client.small_business?(duns: nine_duns, naicsCode: naics_code)
+      expect(response).to be(true)
+    end
+
+    it "should verify that vendor in the system is a small business with full 6-digit naics code" do
+      response = client.small_business?(duns: nine_duns, naicsCode: full_naics_code)
+      expect(response).to be(true)
+    end
+
+    it "should verify that vendor in the system is not a small business" do
+      response = client.small_business?(duns: big_biz_duns, naicsCode: naics_code)
       expect(response).to be(false)
     end
   end

@@ -25,9 +25,35 @@ module Samwise
       JSON.parse(response.body)
     end
 
-    def is_excluded?(duns: nil)
+    def excluded?(duns: nil)
       response = lookup_duns(duns: duns)
       JSON.parse(response.body)["hasKnownExclusion"] == false
+    end
+
+    def small_business?(duns: nil, naicsCode: nil)
+      response = lookup_duns(duns: duns)
+      data = JSON.parse(response.body)["sam_data"]["registration"]
+
+      if data["certifications"] == nil
+        return false
+      end
+      data = data["certifications"]["farResponses"]
+      small_biz_array = data.find{|far|far["id"]=="FAR 52.219-1"}["answers"].find{"naics"}["naics"]
+
+      # Allows for exact matches of a NAICS Code *or* NAICS code that starts with the argument.
+      # E.g., 541511 matches, but 54151 also matches
+      if small_biz_array.class == Array
+        naics = small_biz_array.find{|naics|naics["naicsCode"].to_s.start_with?(naicsCode.to_s)}
+      else
+        naics = small_biz_array
+      end
+
+      # Check for the NAICS Code and, if found, check whether it's a small
+      if naics == nil
+        false
+      else
+        naics["isSmallBusiness"] == "Y"
+      end
     end
 
     private

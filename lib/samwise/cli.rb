@@ -14,7 +14,7 @@ module Samwise
     method_option :infile, :aliases => "-i", :desc => "Nonpiped version input"
     desc "excluded", "Verify Vendor is not on the excluded parties list"
     def excluded
-      wrap_sam("excluded"){|c, u, j| u[j] = c.is_excluded?(duns: u['duns'])}
+      wrap_sam("excluded"){|c, u, j| u[j] = c.excluded?(duns: u['duns'])}
     end
 
     method_option :infile, :aliases => "-i", :desc => "Nonpiped version input"
