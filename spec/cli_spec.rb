@@ -21,7 +21,7 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 
   describe ".verify" do
     let(:method) {:verify}
-    let(:verified_user) {Factory.build_users_json(user_array, [{"verified":true}, {"verified":false}])+"\n"}
+    let(:verified_user) {Factory.build_users_json(user_array, [{"verified" => true}, {"verified" => false}])+"\n"}
     it "verifies the duns for each user with streamed infile" do
         piped_file
         expect(output(method, goodfile)).to eq(verified_user)
@@ -41,7 +41,7 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 
   describe ".excluded" do
 	  let(:method) {:excluded}
-	  let(:excluded_user){Factory.build_users_json(user_array, [{"excluded":false}, {"excluded":false}])+"\n"}
+	  let(:excluded_user){Factory.build_users_json(user_array, [{"excluded" => false}, {"excluded" => false}])+"\n"}
 	  it "checks if users are excluded for each user in a streamed infile" do
 	    piped_file
 	    expect(output(method, goodfile)).to eq(excluded_user)
@@ -83,7 +83,7 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 
   describe ".check_format" do
 	  let(:method) {:check_format}
-	  let(:valid_duns){Factory.build_users_json(user_array, [{"valid_format":true}, {"valid_format":true}])+"\n"}
+	  let(:valid_duns){Factory.build_users_json(user_array, [{"valid_format" => true}, {"valid_format" => true}])+"\n"}
 	  it "verifies that the each duns number is formatted for each user in a streamed infile" do
       piped_file
       expect(output(method, goodfile)).to eq(valid_duns)
@@ -104,7 +104,7 @@ describe Samwise::Cli, vcr: { cassette_name: "Samwise::Cli", record: :new_episod
 
   describe ".format" do
     let(:method) {:format}
-    let(:format_duns){Factory.build_users_json(user_array, [{"formatted_duns":"0800374780000"}, {"formatted_duns":"0800314780000"}])+"\n"}
+    let(:format_duns){Factory.build_users_json(user_array, [{"formatted_duns" => "0800374780000"}, {"formatted_duns" => "0800314780000"}])+"\n"}
     it "formats duns numbers when streamed in json with users array and duns key" do
       piped_file
       expect(output(method, goodfile)).to eq(format_duns)

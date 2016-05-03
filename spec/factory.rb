@@ -2,8 +2,8 @@ require 'json'
 class Factory
   def self.create_user(arr)
     usr = {
-      "uid": arr[0],
-      "duns": arr[1]
+      "uid" => arr[0],
+      "duns" => arr[1]
     }
     if arr[2]
       puts type(arr[2])
@@ -28,17 +28,17 @@ class Factory
       end
       return uarry
     else
-      puts "arrays not same length"
+      # puts "arrays not same length"
     end
   end
 
 
   def self.build_users_json(array, extrakeys)
-    {"users": Factory.add_key(array, extrakeys)}.to_json
+    {"users" => Factory.add_key(array, extrakeys)}.to_json
   end
 
 end
 
-# 
+#
 # usr = Factory.create_users(["1010", "1100"], ["duns1", "duns2"])
 # print Factory.build_users_json(usr, [{"verified":true}, {"verified":false}])
