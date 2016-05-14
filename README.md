@@ -53,33 +53,105 @@ client.small_business?(duns: '080037478', naicsCode: 541511)
 ### Get DUNS info
 
 ```ruby
-client.get_duns_info(duns: '080037478')
-#=>
+duns_info = client.get_duns_info(duns: '080037478')
+
 {
-    "sam_data" => {
-        "registration" => {
-            "govtBusinessPoc" => {
-                "lastName" => "SUDOL", "address" => {
-                    "Line1" => "4301 N HENDERSON RD APT 408", "Zip" => "22203", "Country" => "USA", "City" => "Arlington", "stateorProvince" => "VA"
-                }, "email" => "BRENDANSUDOL@GMAIL.COM", "usPhone" => "5404218332", "firstName" => "BRENDAN"
-            }, "dunsPlus4" => "0000", "activationDate" => "2015-10-30 11:42:30.0", "fiscalYearEndCloseDate" => "12/31", "businessTypes" => ["VW", "2X", "27"], "registrationDate" => "2015-10-28 00:00:00.0", "certificationsURL" => {
-                "pdfUrl" => "https://www.sam.gov/SAMPortal/filedownload?reportType=1&orgId=%2BFCe4Gq91w3LPzmIapO9KekwldCbu7D2ee%2FlxnUkqFvrQwe3OD%2FJSpI%2FuXW0rrpz&pitId=clfEJcL40D6baXhmKE8hVFZPHUDQegjQvNgn4YGfaL%2Fzh6O%2B%2FUJYaSJJ0dKFPFhm&requestId=Xzq5jdsGDkiXPF4"
-            }, "hasDelinquentFederalDebt" => false, "duns" => "080037478", "cage" => "7H1Y7", "hasKnownExclusion" => false, "publicDisplay" => true, "expirationDate" => "2016-10-27 10:53:02.0", "status" => "ACTIVE", "corporateStructureCode" => "2J", "stateOfIncorporation" => "VA", "corporateStructureName" => "Sole Proprietorship", "legalBusinessName" => "Sudol, Brendan", "congressionalDistrict" => "VA 08", "businessStartDate" => "2015-10-28", "statusMessage" => "Active", "lastUpdateDate" => "2015-11-02 17:36:23.0", "submissionDate" => "2015-10-28 10:53:02.0", "samAddress" => {
-                "Zip4" => "2511", "Line1" => "4301 N Henderson Rd Apt 408", "Zip" => "22203", "Country" => "USA", "City" => "Arlington", "stateorProvince" => "VA"
-            }, "naics" => [{
-                "isPrimary" => false, "naicsCode" => "518210", "naicsName" => "DATA PROCESSING, HOSTING, AND RELATED SERVICES"
-            }, {
-                "isPrimary" => true, "naicsCode" => "541511", "naicsName" => "CUSTOM COMPUTER PROGRAMMING SERVICES"
-            }], "creditCardUsage" => true, "countryOfIncorporation" => "USA", "electronicBusinessPoc" => {
-                "lastName" => "SUDOL", "address" => {
-                    "Line1" => "4301 N HENDERSON RD APT 408", "Zip" => "22203", "Country" => "USA", "City" => "Arlington", "stateorProvince" => "VA"
-                }, "email" => "BRENDANSUDOL@GMAIL.COM", "usPhone" => "5404218332", "firstName" => "BRENDAN"
-            }, "mailingAddress" => {
-                "Zip4" => "2511", "Line1" => "4301 N Henderson Rd Apt 408", "Zip" => "22203", "Country" => "USA", "City" => "Arlington", "stateorProvince" => "VA"
-            }, "purposeOfRegistration" => "ALL_AWARDS"
+  "sam_data"=>{
+    "registration"=>{
+      "govtBusinessPoc"=>{
+        "lastName"=>"SUDOL",
+        "address"=>{
+          "zip"=>"22203",
+          "countryCode"=>"USA",
+          "line1"=>"4301 N HENDERSON RD APT 408",
+          "stateorProvince"=>"VA",
+          "city"=>"Arlington"
+        },
+        "email"=>"BRENDANSUDOL@GMAIL.COM",
+        "usPhone"=>"5404218332",
+        "firstName"=>"BRENDAN"
+      },
+      "qualifications"=>{
+      },
+      "dunsPlus4"=>"0000",
+      "activationDate"=>"2015-10-30 11:42:30.0",
+      "fiscalYearEndCloseDate"=>"12\/31",
+      "businessTypes"=>[
+        "VW",
+        "2X",
+        "27"
+      ],
+      "registrationDate"=>"2015-10-28 00:00:00.0",
+      "certificationsURL"=>{
+        "pdfUrl":
+"https:\/\/www.sam.gov\/SAMPortal\/filedownload?reportType=1&orgId=kZhDothaHaS8Y%2BBby2ety%2B1PIcKkDuGxkhITFtBfiwpmpGqNLrKsCz9OrI6CaxsI&pitId=Pg1XpWC8vQH7LKi9e8r5BK5D6ORH953kPtjfCGikUDnIY8Fsp71cFeSgzD8W9Uqd&requestId=OBq2t61SZrN75k9"
+      },
+      "hasDelinquentFederalDebt"=>false,
+      "duns"=>"080037478",
+      "cage"=>"7H1Y7",
+      "hasKnownExclusion"=>false,
+      "publicDisplay"=>true,
+      "expirationDate"=>"2016-10-27 10:53:02.0",
+      "status"=>"ACTIVE",
+      "corporateStructureCode"=>"2J",
+      "stateOfIncorporation"=>"VA",
+      "corporateStructureName"=>"Sole Proprietorship",
+      "legalBusinessName"=>"Sudol, Brendan",
+      "congressionalDistrict"=>"VA 08",
+      "bondingInformation"=>{
+      },
+      "businessStartDate"=>"2015-10-28",
+      "statusMessage"=>"Active",
+      "lastUpdateDate"=>"2015-11-02 17:36:23.0",
+      "samAddress"=>{
+        "zipPlus4"=>"2511",
+        "zip"=>"22203",
+        "countryCode"=>"USA",
+        "line1"=>"4301 N Henderson Rd Apt 408",
+        "stateorProvince"=>"VA",
+        "city"=>"Arlington"
+      },
+      "submissionDate"=>"2015-10-28 10:53:02.0",
+      "naics"=>[
+        {
+          "isPrimary"=>false,
+          "naicsCode"=>"518210",
+          "naicsName"=>"DATA PROCESSING, HOSTING, AND RELATED SERVICES"
+        },
+        {
+          "isPrimary"=>true,
+          "naicsCode"=>"541511",
+          "naicsName"=>"CUSTOM COMPUTER PROGRAMMING SERVICES"
         }
+      ],
+      "creditCardUsage"=>true,
+      "countryOfIncorporation"=>"USA",
+      "electronicBusinessPoc"=>{
+        "lastName"=>"SUDOL",
+        "address"=>{
+          "zip"=>"22203",
+          "countryCode"=>"USA",
+          "line1"=>"4301 N HENDERSON RD APT 408",
+          "stateorProvince"=>"VA",
+          "city"=>"Arlington"
+        },
+        "email"=>"BRENDANSUDOL@GMAIL.COM",
+        "usPhone"=>"5404218332",
+        "firstName"=>"BRENDAN"
+      },
+      "mailingAddress"=>{
+        "zipPlus4"=>"2511",
+        "zip"=>"22203",
+        "countryCode"=>"USA",
+        "line1"=>"4301 N Henderson Rd Apt 408",
+        "stateorProvince"=>"VA",
+        "city"=>"Arlington"
+      },
+      "purposeOfRegistration"=>"ALL_AWARDS"
     }
+  }
 }
+#=>
 ```
 
 ### Validate the format of a DUNS number
