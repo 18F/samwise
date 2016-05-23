@@ -46,9 +46,25 @@ client.excluded?(duns: '080037478')
 ### Verify Vendor is a small business
 
 ```ruby
-client.small_business?(duns: '080037478', naicsCode: 541511)
+client.small_business?(duns: '080037478')
 #=> false
 ```
+
+This method checks against the following NAICS codes:
+
+- 511210
+- 541511
+- 541512
+- 541519
+- 334614
+
+What is a NAICS code?
+
+> The North American Industry Classification System (NAICS) is used by businesses and governments to classify and measure economic activity in the United States, Canada, and Mexico. NAICS is 6-digit code system that is currently the standard used by federal statistical agencies in classifying business establishments.
+
+(source: http://siccode.com/en/pages/what-is-a-naics-code)
+
+The whitelisted NAICS codes classify companies that offer IT or related services.
 
 ### Get DUNS info
 

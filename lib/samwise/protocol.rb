@@ -4,6 +4,8 @@ module Samwise
     SAM_API_API_VERSION = 'v4'
     SAM_STATUS_URL      = 'https://www.sam.gov/samdata/registrations/trackProgress'
     SAM_STATUS_KEY      = '1452031543862'
+    NAICS_WHITELIST     = [511210, 541511, 541512, 541519, 334614]
+    FAR_SMALL_BIZ_CITATION  = 'FAR 52.219-1'
 
     def self.duns_url(duns: nil, api_key: nil)
       fail Samwise::Error::ArgumentMissing, 'DUNS number is missing' if duns.nil?
