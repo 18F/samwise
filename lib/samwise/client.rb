@@ -30,30 +30,25 @@ module Samwise
       JSON.parse(response.body)["hasKnownExclusion"] == false
     end
 
-    def small_business?(duns: nil, naicsCode: nil)
+    def small_business?(duns: nil)
       response = lookup_duns(duns: duns)
       data = JSON.parse(response.body)["sam_data"]["registration"]
 
-      if data["certifications"] == nil
-        return false
-      end
-      data = data["certifications"]["farResponses"]
-      small_biz_array = data.find{|far|far["id"]=="FAR 52.219-1"}["answers"].find{"naics"}["naics"]
-
-      # Allows for exact matches of a NAICS Code *or* NAICS code that starts with the argument.
-      # E.g., 541511 matches, but 54151 also matches
-      if small_biz_array.class == Array
-        naics = small_biz_array.find{|naics|naics["naicsCode"].to_s.start_with?(naicsCode.to_s)}
-      else
-        naics = small_biz_array
+      far_responses = data['certifications']['farResponses']
+      response_to_small_biz = far_responses.find do |response|
+        response['id'] == Samwise::Protocol::FAR_SMALL_BIZ_CITATION
       end
 
-      # Check for the NAICS Code and, if found, check whether it's a small
-      if naics == nil
-        false
-      else
-        naics["isSmallBusiness"] == "Y"
+      answers = response_to_small_biz['answers']
+
+      naics_answers = answers.find {|answer| answer.has_key?('naics')}['naics']
+      small_business_naics_answers = naics_answers.select do |answer|
+        Samwise::Protocol::NAICS_WHITELIST.include?(answer['naicsCode'])
       end
+
+      !small_business_naics_answers.detect do |answer|
+        answer['isSmallBusiness'] == 'Y'
+      end.nil?
     end
 
     private

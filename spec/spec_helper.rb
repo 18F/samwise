@@ -4,6 +4,7 @@ require 'rspec/expectations'
 require 'uri'
 require 'vcr'
 require 'webmock/rspec'
+require 'pry'
 
 
 include Samwise
