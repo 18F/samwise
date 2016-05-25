@@ -2,393 +2,17 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.data.gov/sam/v1/registrations/8091025070000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
-      Accept:
-      - "*/*"
-      Date:
-      - Wed, 06 Jan 2016 20:01:33 GMT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 06 Jan 2016 20:01:15 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4989'
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"disasterRelief":{"type":"ANY"},"dunsPlus4":"0000","activationDate":"2015-11-27
-        08:50:04.0","fiscalYearEndCloseDate":"12/31","businessTypes":["QZ","XS","VW","2X","27","23","A620240406"],"pastPerformancePoc":{"lastName":"MECCIA","address":{"Line1":"600
-        19th St NW","Zip":"20431","Country":"USA","City":"Washington","stateorProvince":"DC"},"email":"MECCIAMJ@STATE.GOV","usPhone":"2024857820","firstName":"MICHAEL"},"registrationDate":"2008-08-17
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=Zy7Pcr575TOozBfu0s2bViB2r%2Fqmw9Wg4JnFzpkZdsJ0HdXjYehmDrcFO9RnNaRq&pitId=xoejtS%2BtlcEa10di8z3oi0tTzy27POa44TCS3cahAyXpyvmNc6Euwh%2FQtanSvmjHs7s5dvrvXmi9%0Ayo6oUedZdg%3D%3D&requestId=oPCyK98P2qU08Ci"},"hasDelinquentFederalDebt":false,"duns":"809102507","altElectronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lnae","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"cage":"561R4","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-11-25
-        18:48:10.0","altPastPerformancePoc":{"lastName":"KAUL","address":{"Line1":"1801
-        North Lynn Street","Zip":"22209","Country":"USA","City":"Rosslyn","stateorProvince":"VA"},"email":"KAULN@STATE.GOV","usPhone":"5713459854","firstName":"NISHA"},"status":"ACTIVE","corporateStructureCode":"2L","corporateStructureName":"Corporate
-        Entity (Not Tax Exempt)","stateOfIncorporation":"MD","legalBusinessName":"XFINION
-        INC.","congressionalDistrict":"MD 06","businessStartDate":"2005-09-16","lastUpdateDate":"2015-11-27
-        08:50:04.0","statusMessage":"Active","samAddress":{"Zip4":"6933","Line1":"7800
-        LONESOME PINE LN","Zip":"20817","Country":"USA","City":"BETHESDA","stateorProvince":"MD"},"submissionDate":"2015-11-26
-        18:48:10.0","naics":[{"isPrimary":false,"naicsCode":"541519","naicsName":"OTHER
-        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
-        PUBLISHERS"},{"isPrimary":true,"naicsCode":"541511","naicsName":"CUSTOM COMPUTER
-        PROGRAMMING SERVICES"},{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"}],"corporateUrl":"http://www.XFinion.com","altGovtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"creditCardUsage":true,"countryOfIncorporation":"USA","divisionNumber":"XFinion","electronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"Line1":"14608
-        Pebble Hill Lane","Zip":"20878","Country":"USA","City":"North Potomac","stateorProvince":"MD"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"mailingAddress":{"Line1":"7800
-        lonesome pine ln","Zip":"20817","Country":"USA","City":"Bethesda","stateorProvince":"MD"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Wed, 06 Jan 2016 20:01:34 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0783270180000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
-      Accept:
-      - "*/*"
-      Date:
-      - Wed, 06 Jan 2016 20:01:34 GMT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 06 Jan 2016 20:01:15 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4988'
-      Content-Length:
-      - '3299'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9787766968","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"dunsPlus4":"0000","activationDate":"2015-03-29
-        15:45:03.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2011-12-27
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=CfE3psUYW8AzBIo9heITds3s6uj94i4CpullWZgrnbXddF3C%2FdGuyS9YM7WmhMlG&pitId=0IE%2BOsh06%2BYELonwrXcthhdZyC9BxTkLT5yI0lhUz%2FmN%2BZrVPnRSXCuwxdmpz2NSnC%2BnPDNPQIgF%0AixZvwSdNnw%3D%3D&requestId=47sK8ymUj43UF54"},"pscCodes":[{"pscName":"R&D-
-        GENERAL SCIENCE/TECHNOLOGY: MATHEMATICAL/COMPUTER SCIENCES (BASIC RESEARCH)","pscCode":"AJ21"},{"pscName":"R&D-
-        GENERAL SCIENCE/TECHNOLOGY: MATHEMATICAL/COMPUTER SCIENCES (APPLIED RESEARCH/EXPLORATORY
-        DEVELOPMENT)","pscCode":"AJ22"},{"pscName":"R&D- GENERAL SCIENCE/TECHNOLOGY:
-        MATHEMATICAL/COMPUTER SCIENCES (ADVANCED DEVELOPMENT)","pscCode":"AJ23"}],"hasDelinquentFederalDebt":false,"duns":"078327018","cage":"6M6Y4","altElectronicBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9783710046","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MARKCREYNOLDS@COMCAST.NET","middleInitial":"C","usPhone":"9783710046","firstName":"MARK"},"hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-03-28
-        15:35:18.0","status":"ACTIVE","corporateStructureCode":"2K","stateOfIncorporation":"MA","corporateStructureName":"Partnership
-        or Limited Liability Partnership","legalBusinessName":"ISLAND PEAK SOFTWARE
-        LLC","congressionalDistrict":"MA 03","businessStartDate":"2011-11-30","statusMessage":"Active","lastUpdateDate":"2015-03-30
-        16:16:49.0","samAddress":{"Zip4":"2799","Line1":"328 VIRGINIA RD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"submissionDate":"2015-03-29
-        15:35:18.0","naics":[{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"},{"isPrimary":true,"naicsCode":"541712","naicsName":"RESEARCH
-        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"}],"corporateUrl":"www.islandpeaksoftware.com","altGovtBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9783710046","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MARKCREYNOLDS@COMCAST.NET","middleInitial":"C","usPhone":"9783710046","firstName":"MARK"},"creditCardUsage":false,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"REYNOLDS","title":"CHIEF
-        ENGINEER","fax":"9787766968","address":{"Zip4":"2799","Line1":"328 VIRGINIA
-        ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"mailingAddress":{"Zip4":"2799","Line1":"328
-        VIRGINIA ROAD","Zip":"01742","Country":"USA","City":"CONCORD","stateorProvince":"MA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Wed, 06 Jan 2016 20:01:34 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0223841150000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
-      Accept:
-      - "*/*"
-      Date:
-      - Wed, 06 Jan 2016 20:01:34 GMT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Age:
-      - '1'
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 06 Jan 2016 20:01:16 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4988'
-      Content-Length:
-      - '5615'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GREMILLION","usPhoneExt":"1112","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"RICK.GREMILLION@GEOCENT.COM","usPhone":"5048311900","firstName":"RICHARD"},"dunsPlus4":"0000","activationDate":"2015-08-06
-        09:31:21.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2009-09-02
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=A%2FGzJar8p9bfsUBQbehJcLa5Xg4YWxVDtDV4tT%2B3N0nDLP2sfKFewpoROGej2Das&pitId=94DUQxnau2ECyduTU9pec1ucWn25Y%2FDgj6qQOedZqs8cX1KMQ3L8LSXLHy4xkEcv&requestId=Fe7lHI9N0YwQ850"},"pscCodes":[{"pscName":"SUPPORT-
-        PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT","pscCode":"R408"},{"pscName":"SUPPORT-
-        PROFESSIONAL: PERSONAL SERVICES CONTRACTS","pscCode":"R497"},{"pscName":"SUPPORT-
-        PROFESSIONAL: TECHNOLOGY SHARING/UTILIZATION","pscCode":"R415"},{"pscName":"SUPPORT-
-        PROFESSIONAL: ENGINEERING/TECHNICAL","pscCode":"R425"},{"pscName":"SUPPORT-
-        PROFESSIONAL: OTHER","pscCode":"R499"}],"hasDelinquentFederalDebt":false,"duns":"022384115","cage":"5NYU1","altElectronicBusinessPoc":{"lastName":"TOMENY","usPhoneExt":"1150","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"JEFF.TOMENY@GEOCENT.COM","usPhone":"5048311900","firstName":"JEFF"},"hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-08-05
-        09:20:57.0","status":"ACTIVE","corporateStructureCode":"2K","stateOfIncorporation":"LA","corporateStructureName":"Partnership
-        or Limited Liability Partnership","legalBusinessName":"Geocent, L.L.C. ","congressionalDistrict":"LA
-        01","businessStartDate":"2008-03-31","statusMessage":"Active","lastUpdateDate":"2015-08-06
-        09:31:21.0","samAddress":{"Zip4":"3044","Line1":"111 Veterans Memorial Blvd
-        Ste 1600 ","Zip":"70005","Country":"USA","City":"Metairie","stateorProvince":"LA"},"submissionDate":"2015-08-06
-        09:20:57.0","naics":[{"isPrimary":false,"naicsCode":"811212","naicsName":"COMPUTER
-        AND OFFICE MACHINE REPAIR AND MAINTENANCE"},{"isPrimary":false,"naicsCode":"541614","naicsName":"PROCESS,
-        PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"},{"isPrimary":false,"naicsCode":"541519","naicsName":"OTHER
-        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"927110","naicsName":"SPACE
-        RESEARCH AND TECHNOLOGY"},{"isPrimary":false,"naicsCode":"336415","naicsName":"GUIDED
-        MISSILE AND SPACE VEHICLE PROPULSION UNIT AND PROPULSION UNIT PARTS MANUFACTURING"},{"isPrimary":false,"naicsCode":"611420","naicsName":"COMPUTER
-        TRAINING"},{"isPrimary":false,"naicsCode":"517110","naicsName":"WIRED TELECOMMUNICATIONS
-        CARRIERS"},{"isPrimary":false,"naicsCode":"541612","naicsName":"HUMAN RESOURCES
-        CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
-        PUBLISHERS"},{"isPrimary":false,"naicsCode":"541611","naicsName":"ADMINISTRATIVE
-        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541513","naicsName":"COMPUTER
-        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":"541720","naicsName":"RESEARCH
-        AND DEVELOPMENT IN THE SOCIAL SCIENCES AND HUMANITIES"},{"isPrimary":false,"naicsCode":"561110","naicsName":"OFFICE
-        ADMINISTRATIVE SERVICES"},{"isPrimary":false,"naicsCode":"561621","naicsName":"SECURITY
-        SYSTEMS SERVICES (EXCEPT LOCKSMITHS)"},{"isPrimary":false,"naicsCode":"541712","naicsName":"RESEARCH
-        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"},{"isPrimary":false,"naicsCode":"561330","naicsName":"PROFESSIONAL
-        EMPLOYER ORGANIZATIONS"},{"isPrimary":false,"naicsCode":"611430","naicsName":"PROFESSIONAL
-        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isPrimary":false,"naicsCode":"561210","naicsName":"FACILITIES
-        SUPPORT SERVICES"},{"isPrimary":false,"naicsCode":"561311","naicsName":"EMPLOYMENT
-        PLACEMENT AGENCIES"},{"isPrimary":false,"naicsCode":"541430","naicsName":"GRAPHIC
-        DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"519130","naicsName":"INTERNET
-        PUBLISHING AND BROADCASTING AND WEB SEARCH PORTALS"},{"isPrimary":true,"naicsCode":"541330","naicsName":"ENGINEERING
-        SERVICES"},{"isPrimary":false,"naicsCode":"332312","naicsName":"FABRICATED
-        STRUCTURAL METAL MANUFACTURING"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"561320","naicsName":"TEMPORARY
-        HELP SERVICES"}],"corporateUrl":"www.geocent.com","altGovtBusinessPoc":{"lastName":"LAMOTTA","usPhoneExt":"1179","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"LORENA.LAMOTTA@GEOCENT.COM","usPhone":"5048311900","firstName":"LORENA"},"creditCardUsage":false,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"MURRAY","usPhoneExt":"1142","fax":"5048311901","address":{"Line2":"STE.
-        1600","Zip4":"3044","Line1":"111 VETERANS BLVD.","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"email":"CONTRACTS@GEOCENT.COM","middleInitial":"S.","usPhone":"5048311900","firstName":"CATHERINE"},"mailingAddress":{"Line2":"Suite
-        1600","Zip4":"3044","Line1":"111 VETERANS MEMORIAL BLVD","Zip":"70005","Country":"USA","City":"METAIRIE","stateorProvince":"LA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Wed, 06 Jan 2016 20:01:34 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0000001000000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
-      Accept:
-      - "*/*"
-      Date:
-      - Wed, 06 Jan 2016 20:01:34 GMT
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 06 Jan 2016 20:01:16 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4986'
-      Content-Length:
-      - '80'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
-        Found"}'
-    http_version: 
-  recorded_at: Wed, 06 Jan 2016 20:01:34 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0800374780000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.7.1, ruby 2.2.1 (2015-02-26))
-      Accept:
-      - "*/*"
-      Date:
-      - Tue, 02 Feb 2016 16:57:46 GMT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Age:
-      - '1'
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 02 Feb 2016 16:57:10 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4999'
-      Content-Length:
-      - '2014'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"SUDOL","address":{"Line1":"4301
-        N HENDERSON RD APT 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"email":"BRENDANSUDOL@GMAIL.COM","usPhone":"5404218332","firstName":"BRENDAN"},"dunsPlus4":"0000","activationDate":"2015-10-30
-        11:42:30.0","fiscalYearEndCloseDate":"12/31","businessTypes":["VW","2X","27"],"registrationDate":"2015-10-28
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=1&orgId=2YwXIMQ2w3Yx23Ejm0exX4pxPe2o%2F9MeQB%2FXr%2FC2oKNpR2F8NYUeTRH39Ahlh%2BE0&pitId=BzydZ47zRiwj1pHfMuqedwfSbzCYxqAOWJNFPP0wembXj4S4%2BrvkVhaHidTnJQlb&requestId=cImW4Nv5BfFQ74o"},"hasDelinquentFederalDebt":false,"duns":"080037478","cage":"7H1Y7","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-10-27
-        10:53:02.0","status":"ACTIVE","corporateStructureCode":"2J","stateOfIncorporation":"VA","corporateStructureName":"Sole
-        Proprietorship","legalBusinessName":"Sudol, Brendan","congressionalDistrict":"VA
-        08","businessStartDate":"2015-10-28","statusMessage":"Active","lastUpdateDate":"2015-11-02
-        17:36:23.0","submissionDate":"2015-10-28 10:53:02.0","samAddress":{"Zip4":"2511","Line1":"4301
-        N Henderson Rd Apt 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"naics":[{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isPrimary":true,"naicsCode":"541511","naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"}],"creditCardUsage":true,"countryOfIncorporation":"USA","electronicBusinessPoc":{"lastName":"SUDOL","address":{"Line1":"4301
-        N HENDERSON RD APT 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"email":"BRENDANSUDOL@GMAIL.COM","usPhone":"5404218332","firstName":"BRENDAN"},"mailingAddress":{"Zip4":"2511","Line1":"4301
-        N Henderson Rd Apt 408","Zip":"22203","Country":"USA","City":"Arlington","stateorProvince":"VA"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Tue, 02 Feb 2016 16:57:46 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v1/registrations/0800314780000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.7.1, ruby 2.2.1 (2015-02-26))
-      Accept:
-      - "*/*"
-      Date:
-      - Tue, 02 Feb 2016 16:57:46 GMT
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Age:
-      - '0'
-      Content-Type:
-      - application/json
-      Date:
-      - Tue, 02 Feb 2016 16:57:10 GMT
-      Server:
-      - openresty
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4998'
-      Content-Length:
-      - '80'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
-        Found"}'
-    http_version: 
-  recorded_at: Tue, 02 Feb 2016 16:57:46 GMT
-- request:
-    method: get
     uri: https://api.data.gov/sam/v4/registrations/8091025070000?api_key=<data_dot_gov_api_key>
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - HTTPClient/1.0 (2.8.0, ruby 2.2.0 (2014-12-25))
+      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
       Accept:
       - "*/*"
       Date:
-      - Sun, 24 Apr 2016 15:19:36 GMT
+      - Tue, 24 May 2016 20:30:27 GMT
   response:
     status:
       code: 200
@@ -397,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 24 Apr 2016 15:19:36 GMT
+      - Tue, 24 May 2016 20:30:21 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -408,9 +32,9 @@ http_interactions:
       - Accept-Encoding
       - Accept-Encoding
       X-Ratelimit-Limit:
-      - '5000'
+      - '25'
       X-Ratelimit-Remaining:
-      - '4992'
+      - '24'
       Age:
       - '0'
       Via:
@@ -423,7 +47,7 @@ http_interactions:
         Pebble Hill Lane","stateorProvince":"MD","city":"North Potomac"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"disasterRelief":{"type":"ANY"},"qualifications":{},"dunsPlus4":"0000","activationDate":"2015-11-27
         08:50:04.0","fiscalYearEndCloseDate":"12/31","businessTypes":["QZ","XS","VW","2X","27","23","A620240406"],"pastPerformancePoc":{"lastName":"MECCIA","address":{"zip":"20431","countryCode":"USA","line1":"600
         19th St NW","stateorProvince":"DC","city":"Washington"},"email":"MECCIAMJ@STATE.GOV","usPhone":"2024857820","firstName":"MICHAEL"},"registrationDate":"2008-08-17
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=i8XthpVk2q7dnzomL7CyRId1Qld3Yk1kbM9oGo4xG1zAsssG%2F87hnnXskmAT13rU&pitId=gRR8yRrsWChfe951P8%2F1dtj1s32pTkfA8n1axbFg0juY4rtDTijuELpJIVMvdJFM&requestId=2W4PGK5t8zHu168"},"hasDelinquentFederalDebt":false,"duns":"809102507","altElectronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"zip":"20878","countryCode":"USA","line1":"14608
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=7XSJiyJCAgoH4l%2FvaJm8Rkp3Yntmxz0MJZ2uoipQZ8DWMmld7Qk5l1hKhCxCP6Vo&pitId=YhJgbYtAO%2BHEPgDqw3VUY8YePz%2FfvQ6o1yMiHpMKjjZvbWe2ElHYRdkMGDmYM%2FDE&requestId=X8Pgh1WmTVs9YGZ"},"hasDelinquentFederalDebt":false,"duns":"809102507","altElectronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"zip":"20878","countryCode":"USA","line1":"14608
         Pebble Hill Lnae","stateorProvince":"MD","city":"North Potomac"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"cage":"561R4","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-11-25
         18:48:10.0","altPastPerformancePoc":{"lastName":"KAUL","address":{"zip":"22209","countryCode":"USA","line1":"1801
         North Lynn Street","stateorProvince":"VA","city":"Rosslyn"},"email":"KAULN@STATE.GOV","usPhone":"5713459854","firstName":"NISHA"},"status":"ACTIVE","corporateStructureCode":"2L","corporateStructureName":"Corporate
@@ -480,7 +104,7 @@ http_interactions:
         52.225-6","answers":{"answerText":"No","section":"52.225-6.a"}},{"id":"FAR
         52.222-48","answers":{"answerText":"Vendor will provide information with specific
         offers to the Government","section":"52.222-48.a.1"}},{"id":"FAR 52.222-52","answers":{"answerText":"Vendor
-        will provide information with specific offers to the Government","section":"52.222-52.a.1.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=ep462n2HMql7v7t7UGvrVJ%2BrCeDN7ltCRj5%2BlsACjH009ozkDbq7TUQMhP%2FRdljN&pitId=KjDU2ERl%2Bqp6DTasy%2FaV83XmxAQZ5LnXcpAUqcyF3pZ9FKPV4KFWvFNHqRkND2Kf&requestId=w9V21Xi7UwKbc0W","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
+        will provide information with specific offers to the Government","section":"52.222-52.a.1.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=oJzAkkf8Kepf889cerKMZIArft9S7T3cB8UWbSlIdEwo4zGi4dFE%2Bz7rlpNo9IQd&pitId=w1kCvDnCHvGiqmD7nhUHDWs7Ds4FZmb%2BG%2BnjU0Sa8S0SUdDJba1z3lgClDxBq5%2BUaVnX7SmVjIS5%0AlEINb8Ciiw%3D%3D&requestId=IyP0V2rk57bF5Uu","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
         252.225-7000","answers":{"answerText":"No","section":"252.225-7000.c.1"}},{"id":"DFAR
         252.225-7020","answers":{"answerText":"No","section":"252.225-7020.c.1"}},{"id":"DFAR
         252.225-7022","answers":{"answerText":"No","section":"252.225-7022.c.1"}},{"id":"DFAR
@@ -489,29 +113,29 @@ http_interactions:
         Pebble Hill Lane","stateorProvince":"MD","city":"North Potomac"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"mailingAddress":{"zip":"20817","countryCode":"USA","line1":"7800
         lonesome pine ln","stateorProvince":"MD","city":"Bethesda"},"purposeOfRegistration":"ALL_AWARDS"}}}'
     http_version: 
-  recorded_at: Sun, 24 Apr 2016 15:19:36 GMT
+  recorded_at: Tue, 24 May 2016 20:30:28 GMT
 - request:
     method: get
-    uri: https://api.data.gov/sam/v4/registrations/0783270180000?api_key=<data_dot_gov_api_key>
+    uri: https://api.data.gov/sam/v4/registrations/0123456780002?api_key=<data_dot_gov_api_key>
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - HTTPClient/1.0 (2.8.0, ruby 2.2.0 (2014-12-25))
+      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
       Accept:
       - "*/*"
       Date:
-      - Sun, 24 Apr 2016 15:19:36 GMT
+      - Tue, 24 May 2016 20:30:28 GMT
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - openresty
       Date:
-      - Sun, 24 Apr 2016 15:19:36 GMT
+      - Tue, 24 May 2016 20:30:22 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -522,9 +146,103 @@ http_interactions:
       - Accept-Encoding
       - Accept-Encoding
       X-Ratelimit-Limit:
-      - '5000'
+      - '25'
       X-Ratelimit-Remaining:
-      - '4996'
+      - '24'
+      Age:
+      - '0'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
+        Found"}'
+    http_version: 
+  recorded_at: Tue, 24 May 2016 20:30:28 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v4/registrations/0000001000000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
+      Accept:
+      - "*/*"
+      Date:
+      - Tue, 24 May 2016 20:30:28 GMT
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 24 May 2016 20:30:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '25'
+      X-Ratelimit-Remaining:
+      - '24'
+      Age:
+      - '0'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
+        Found"}'
+    http_version: 
+  recorded_at: Tue, 24 May 2016 20:30:29 GMT
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v4/registrations/0783270180000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
+      Accept:
+      - "*/*"
+      Date:
+      - Tue, 24 May 2016 20:30:29 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 24 May 2016 20:30:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '25'
+      X-Ratelimit-Remaining:
+      - '23'
       Age:
       - '0'
       Via:
@@ -537,7 +255,7 @@ http_interactions:
         ENGINEER","fax":"9784055109","address":{"zipPlus4":"2799","zip":"01742","countryCode":"USA","line1":"328
         VIRGINIA ROAD","stateorProvince":"MA","city":"CONCORD"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"qualifications":{},"dunsPlus4":"0000","activationDate":"2016-03-28
         10:14:38.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2011-12-27
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=9syqOQYvA1rjJ6LEUn21rWIotRmGEOAVPn1svpmiNsK6%2F8VSyWtqTPHGejCGzXpC&pitId=C3ZTIzJgzfyAgXjL958UbwhrYn4IQtIlw2oW9pNk%2Fg2s6R%2FF98pu3XeHPiPOTULeJg7ESS9ELDYS%0AtQrSN8rC%2Bw%3D%3D&requestId=3355hKpQX2BkuZ7"},"pscCodes":[{"pscName":"R&D-
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=0VocQSIo565AfpNPbIMORbOtcoqJjjoK6ZYLBfRgy14db5eRyn4fDkpkhphvfu8w&pitId=I%2FHTb4OrGHUwBvgjTvHIMnwx9pU4xMfoQs44HUZ1tjIJzUcGjLTCjllI2wKgMNqQ&requestId=zZkl7Z0Xi4G7L32"},"pscCodes":[{"pscName":"R&D-
         GENERAL SCIENCE/TECHNOLOGY: MATHEMATICAL/COMPUTER SCIENCES (APPLIED RESEARCH/EXPLORATORY
         DEVELOPMENT)","pscCode":"AJ22"},{"pscName":"R&D- GENERAL SCIENCE/TECHNOLOGY:
         MATHEMATICAL/COMPUTER SCIENCES (BASIC RESEARCH)","pscCode":"AJ21"},{"pscName":"R&D-
@@ -591,7 +309,7 @@ http_interactions:
         52.225-4","answers":{"answerText":"No","section":"52.225-4.a"}},{"id":"FAR
         52.225-6","answers":{"answerText":"No","section":"52.225-6.a"}},{"id":"FAR
         52.222-48","answers":{"answerText":"No","section":"52.222-48.a.1"}},{"id":"FAR
-        52.222-52","answers":{"answerText":"No","section":"52.222-52.a.1.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=yAU%2F9WZjb7LkrJApdak3lQAfnZT8jHLysiT%2Fq6P8C6JDq%2B0AFvbMLXGF0w7WWvvg&pitId=M8vRJ%2FtiCGRBj35Iy8k%2B7V%2BI5lNsCZmx6No%2BRomm0uDVzvUT5wQMkuTPhQEqBZPh&requestId=fgCFkZ8VnQ534yC","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
+        52.222-52","answers":{"answerText":"No","section":"52.222-52.a.1.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=W8%2BrZF4X0bFuuOVOXbugLJjCWEAVhWTS4Bnzy0c03R9Um%2B0ctz5HIsbTeJCKZEAo&pitId=xYLEtbYCokVwjlRuhopTZwrxvqFsXVG2QjiMQLWHw%2FMnyNFhCfRE%2B5%2BKwSFa9U3SbC2PDN5C8435%0A8Yg2EjW5yA%3D%3D&requestId=SGtWCD7V3Aj0ZaF","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
         252.225-7000","answers":{"answerText":"No","section":"252.225-7000.c.1"}},{"id":"DFAR
         252.225-7020","answers":{"answerText":"No","section":"252.225-7020.c.1"}},{"id":"DFAR
         252.225-7022","answers":{"answerText":"No","section":"252.225-7022.c.1"}},{"id":"DFAR
@@ -602,7 +320,7 @@ http_interactions:
         VIRGINIA ROAD","stateorProvince":"MA","city":"CONCORD"},"email":"MCR@ISLANDPEAKSOFTWARE.COM","middleInitial":"C","usPhone":"9783418385","firstName":"MARK"},"mailingAddress":{"zipPlus4":"2799","zip":"01742","countryCode":"USA","line1":"328
         VIRGINIA ROAD","stateorProvince":"MA","city":"CONCORD"},"purposeOfRegistration":"ALL_AWARDS"}}}'
     http_version: 
-  recorded_at: Sun, 24 Apr 2016 15:19:37 GMT
+  recorded_at: Tue, 24 May 2016 20:30:29 GMT
 - request:
     method: get
     uri: https://api.data.gov/sam/v4/registrations/0223841150000?api_key=<data_dot_gov_api_key>
@@ -611,11 +329,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - HTTPClient/1.0 (2.8.0, ruby 2.2.0 (2014-12-25))
+      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
       Accept:
       - "*/*"
       Date:
-      - Sun, 24 Apr 2016 15:19:37 GMT
+      - Tue, 24 May 2016 20:30:29 GMT
   response:
     status:
       code: 200
@@ -624,7 +342,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 24 Apr 2016 15:19:37 GMT
+      - Tue, 24 May 2016 20:30:22 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -635,11 +353,11 @@ http_interactions:
       - Accept-Encoding
       - Accept-Encoding
       X-Ratelimit-Limit:
-      - '5000'
+      - '25'
       X-Ratelimit-Remaining:
-      - '4989'
+      - '23'
       Age:
-      - '1'
+      - '0'
       Via:
       - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Cache:
@@ -649,7 +367,7 @@ http_interactions:
       string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GREMILLION","usPhoneExt":"1112","fax":"5048311901","address":{"zipPlus4":"3044","zip":"70005","countryCode":"USA","line1":"111
         VETERANS BLVD.","stateorProvince":"LA","line2":"STE. 1600","city":"METAIRIE"},"email":"RICK.GREMILLION@GEOCENT.COM","usPhone":"5048311900","firstName":"RICHARD"},"qualifications":{"acass":{"id":"SF330","answers":{"answerText":"No","section":"SF330.1"}}},"dunsPlus4":"0000","activationDate":"2015-08-06
         09:31:21.0","fiscalYearEndCloseDate":"12/31","businessTypes":["LJ","VW","2X"],"registrationDate":"2009-09-02
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=71SDUByil3UweHOzGmhcAciHyO4gWLsN4TQoWeslkMDNDu5ffM%2FO%2BaaThT4bRy34&pitId=AdieorTezP0J2uFM0EEyCyabej2CLFqx2IXBjtFVAtpb6unNhlQTim%2BRECrx1jGYjSJEtEPlo3SU%0Az8yds8kx3w%3D%3D&requestId=CzI1yor42abeY8o"},"pscCodes":[{"pscName":"SUPPORT-
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=%2FDfzk3q2kq8nQD7%2FQCckufEV2ctjlobGnFLlScNUfeAMxFIigNs3RzZiFhoSSNz9&pitId=RhC3Ct07GBf9xGMnl%2BNYowZp2VuWD2uHjQcJ9AlrH%2FPUm%2FnWpn%2FXxjAT474FwNS9&requestId=4S2U5F3cWeiEgCR"},"pscCodes":[{"pscName":"SUPPORT-
         PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT","pscCode":"R408"},{"pscName":"SUPPORT-
         PROFESSIONAL: PERSONAL SERVICES CONTRACTS","pscCode":"R497"},{"pscName":"SUPPORT-
         PROFESSIONAL: TECHNOLOGY SHARING/UTILIZATION","pscCode":"R415"},{"pscName":"SUPPORT-
@@ -877,7 +595,7 @@ http_interactions:
         52.225-4","answers":{"answerText":"No","section":"52.225-4.a"}},{"id":"FAR
         52.225-6","answers":{"answerText":"No","section":"52.225-6.a"}},{"id":"FAR
         52.222-48","answers":{"answerText":"No","section":"52.222-48.a.1"}},{"id":"FAR
-        52.222-52","answers":{"answerText":"No","section":"52.222-52.a.1.1"}},{"id":"SF330","answers":{"answerText":"No","section":"SF330.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=AVD3g6RyR9tixGQ35clQ1e7K0LFJKn3elpw4KuYOyrakPfyUhSKmoIDveIWbg%2Bil&pitId=%2BdKybOx%2Br2sCaPohaHKRyfRXSFCkpigmLixLK7NbisGGAFy3v8u0l35IiDL80dq2zyem%2FyZypFNk%0AGX40ZtFNsw%3D%3D&requestId=2A4SGx6BGwD6NGy","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
+        52.222-52","answers":{"answerText":"No","section":"52.222-52.a.1.1"}},{"id":"SF330","answers":{"answerText":"No","section":"SF330.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=grrSwpW57oGl9qSZSRrN9LWVukkPG%2Bb%2BYZWGO1tbgsLWPZpJF1pOFHhn6G1clOhq&pitId=rRIVdpjcFoUNU%2F87sKTDkzhHFck9zdtLq6pJGYmBgmlYgm6mU1o7FZQqaJ1UbGp1EzO535Vdgm%2B%2F%0ADQI27lH8DA%3D%3D&requestId=QlMgtcPOEJAvu5z","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
         252.225-7000","answers":{"answerText":"No","section":"252.225-7000.c.1"}},{"id":"DFAR
         252.225-7020","answers":{"answerText":"No","section":"252.225-7020.c.1"}},{"id":"DFAR
         252.225-7022","answers":{"answerText":"No","section":"252.225-7022.c.1"}},{"id":"DFAR
@@ -886,168 +604,7 @@ http_interactions:
         VETERANS BLVD.","stateorProvince":"LA","line2":"STE. 1600","city":"METAIRIE"},"email":"CONTRACTS@GEOCENT.COM","middleInitial":"S.","usPhone":"5048311900","firstName":"CATHERINE","notes":"CONTRACTS@GEOCENT.COM"},"mailingAddress":{"zipPlus4":"3044","zip":"70005","countryCode":"USA","line1":"111
         VETERANS MEMORIAL BLVD","stateorProvince":"LA","line2":"Suite 1600","city":"METAIRIE"},"purposeOfRegistration":"ALL_AWARDS"}}}'
     http_version: 
-  recorded_at: Sun, 24 Apr 2016 15:19:37 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v4/registrations/0000001000000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.8.0, ruby 2.2.0 (2014-12-25))
-      Accept:
-      - "*/*"
-      Date:
-      - Sun, 24 Apr 2016 15:19:37 GMT
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Server:
-      - openresty
-      Date:
-      - Sun, 24 Apr 2016 15:19:37 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4994'
-      Age:
-      - '0'
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-    body:
-      encoding: UTF-8
-      string: '{"Message":"The registration could not be found","Code":404,"Error":"Not
-        Found"}'
-    http_version: 
-  recorded_at: Sun, 24 Apr 2016 15:19:37 GMT
-- request:
-    method: get
-    uri: https://api.data.gov/sam/v4/registrations/8091025070000?api_key=<data_dot_gov_api_key>
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - HTTPClient/1.0 (2.8.0, ruby 2.2.0 (2014-12-25))
-      Accept:
-      - "*/*"
-      Date:
-      - Sun, 24 Apr 2016 15:32:10 GMT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - openresty
-      Date:
-      - Sun, 24 Apr 2016 15:32:11 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4993'
-      Age:
-      - '0'
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-    body:
-      encoding: UTF-8
-      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"zip":"20878","countryCode":"USA","line1":"14608
-        Pebble Hill Lane","stateorProvince":"MD","city":"North Potomac"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"disasterRelief":{"type":"ANY"},"qualifications":{},"dunsPlus4":"0000","activationDate":"2015-11-27
-        08:50:04.0","fiscalYearEndCloseDate":"12/31","businessTypes":["QZ","XS","VW","2X","27","23","A620240406"],"pastPerformancePoc":{"lastName":"MECCIA","address":{"zip":"20431","countryCode":"USA","line1":"600
-        19th St NW","stateorProvince":"DC","city":"Washington"},"email":"MECCIAMJ@STATE.GOV","usPhone":"2024857820","firstName":"MICHAEL"},"registrationDate":"2008-08-17
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=okxwzVSDsfiniCB%2Bp92gQ4Pv%2Fb2ZcZ4RVR4tS6Nz%2Bj%2F5CUvIZq4TpYgz6m1W6FDF&pitId=mt5W8ijTdlt%2FN%2BMffVT3102bbeVzeUc7JTvcAozmclg7FENfalXRYygxmGJbZ22e&requestId=P5X7Wgm4C5c25f6"},"hasDelinquentFederalDebt":false,"duns":"809102507","altElectronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"zip":"20878","countryCode":"USA","line1":"14608
-        Pebble Hill Lnae","stateorProvince":"MD","city":"North Potomac"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"cage":"561R4","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2016-11-25
-        18:48:10.0","altPastPerformancePoc":{"lastName":"KAUL","address":{"zip":"22209","countryCode":"USA","line1":"1801
-        North Lynn Street","stateorProvince":"VA","city":"Rosslyn"},"email":"KAULN@STATE.GOV","usPhone":"5713459854","firstName":"NISHA"},"status":"ACTIVE","corporateStructureCode":"2L","corporateStructureName":"Corporate
-        Entity (Not Tax Exempt)","stateOfIncorporation":"MD","legalBusinessName":"XFINION
-        INC.","congressionalDistrict":"MD 06","bondingInformation":{},"businessStartDate":"2005-09-16","lastUpdateDate":"2015-11-27
-        08:50:04.0","statusMessage":"Active","samAddress":{"zipPlus4":"6933","zip":"20817","countryCode":"USA","line1":"7800
-        LONESOME PINE LN","stateorProvince":"MD","city":"BETHESDA"},"submissionDate":"2015-11-26
-        18:48:10.0","naics":[{"isPrimary":false,"naicsCode":"541519","naicsName":"OTHER
-        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
-        PUBLISHERS"},{"isPrimary":true,"naicsCode":"541511","naicsName":"CUSTOM COMPUTER
-        PROGRAMMING SERVICES"},{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"}],"certifications":{"farResponses":[{"id":"FAR 52.209-2","answers":[{"answerText":"No","section":"52.209-2.c.1"},{"answerText":"No","section":"52.209-2.c.2"}]},{"id":"FAR
-        52.209-5","answers":[{"answerText":"No","section":"52.209-5.a.1.i.A"},{"answerText":"No","section":"52.209-5.a.1.i.B"},{"answerText":"No","section":"52.209-5.a.1.i.D"},{"answerText":"No","section":"52.209-5.a.1.i.C"},{"answerText":"No","section":"52.209-5.a.1.ii"}]},{"id":"FAR
-        52.203-2","answers":{"section":"52.203-2.b.2.i","SamPointOfContact":{"lastName":"Goswami","title":"Principal","firstName":"Vijaykumar"}}},{"id":"FAR
-        52.215-6","answers":{"answerText":"No","section":"52.215-6.a"}},{"id":"FAR
-        52.214-14","answers":{"answerText":"No","section":"52.214-14.a"}},{"id":"FAR
-        52.223-4","answers":{"answerText":"No","section":"52.223-4"}},{"id":"FAR 52.223-9","answers":{"answerText":"No","section":"52.223-9"}},{"id":"FAR
-        52.219-2","answers":{"answerText":"No","section":"52.219-2.a"}},{"id":"FAR
-        52.204-3","answers":[{"answerText":"TIN ON FILE","section":"52.204-3.d"},{"answerText":"No","section":"52.204-3.f"}]},{"id":"FAR
-        52.212-3","answers":[{"naics":[{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
-        Computer Related Services"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"},{"isSmallBusiness":"Y","isPrimary":true,"naicsCode":541511,"naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
-        PUBLISHERS"}],"section":"52.212-3.c"},{"answerText":"Yes","section":"52.212-3.c.1"},{"answerText":"Yes","section":"52.212-3.c.4"},{"answerText":"No","section":"52.212-3.c.5"},{"answerText":"No","section":"52.212-3.c.6.i"},{"answerText":"No","section":"52.212-3.c.6.ii"},{"answerText":"No","section":"52.212-3.c.7.i"},{"answerText":"No","section":"52.212-3.c.7.ii"},{"answerText":"No","section":"52.212-3.c.10.i.A"},{"answerText":"No","section":"52.212-3.c.10.i.B"},{"answerText":"No","section":"52.212-3.c.10.ii"},{"answerText":"No","section":"52.212-3.c.11.ii"},{"answerText":"No","section":"52.212-3.d.1.i"},{"answerText":"Yes","section":"52.212-3.d.1.ii"},{"answerText":"XFINION
-        INC.  has not had previous contracts subject to written affirmative action
-        programs requirements from Secretary of Labor regulations.","section":"52.212-3.d.2.i"},{"answerText":"No","section":"52.212-3.f"},{"answerText":"No","section":"52.212-3.h.1"},{"answerText":"No","section":"52.212-3.h.2"},{"answerText":"No","section":"52.212-3.h.4"},{"answerText":"No","section":"52.212-3.h.3"},{"answerText":"No","section":"52.212-3.h.5"},{"answerText":"No","section":"52.212-3.i.2.i"},{"section":"52.212-3.j"},{"answerText":"Vendor
-        will provide information with specific offers to the Government","section":"52.212-3.k.1.2.i"},{"answerText":"Vendor
-        will provide information with specific offers to the Government","section":"52.212-3.k.2.2"},{"answerText":"No","section":"52.212-3.l.5"},{"answerText":"No","section":"52.212-3.n.2.i"},{"answerText":"No","section":"52.212-3.n.2.ii"},{"answerText":"No","section":"52.226-2.b.1"},{"answerText":"No","section":"52.226-2.b.2"}]},{"id":"FAR
-        52.219-1","answers":[{"naics":[{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
-        Computer Related Services"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"},{"isSmallBusiness":"Y","isPrimary":true,"naicsCode":541511,"naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
-        PUBLISHERS"}],"section":"52.219-1.b"},{"answerText":"Yes","section":"52.219-1.b.1"},{"answerText":"No","section":"52.219-1.b.3.1"},{"answerText":"No","section":"52.219-1.b.4.i"},{"answerText":"No","section":"52.219-1.b.4.ii"},{"answerText":"No","section":"52.219-1.b.5.i"},{"answerText":"No","section":"52.219-1.b.5.ii"},{"answerText":"No","section":"52.219-1.b.6"},{"answerText":"No","section":"52.219-1.b.7"},{"answerText":"No","section":"52.219-1.b.8.i"},{"answerText":"No","section":"52.219-1.b.8.ii"},{"answerText":"Yes","section":"52.219-1.b.9.5"}]},{"id":"FAR
-        52.219-22","answers":[{"naics":[{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
-        Computer Related Services"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"},{"isSmallBusiness":"Y","isPrimary":true,"naicsCode":541511,"naicsName":"CUSTOM
-        COMPUTER PROGRAMMING SERVICES"},{"isSmallBusiness":"Y","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
-        PUBLISHERS"}],"section":"52.219-22.b"},{"answerText":"No","section":"52.219-22.b.2.1"},{"answerText":"Yes","section":"52.219-22.b.1.ii"}]},{"id":"FAR
-        52.227-15","answers":{"answerText":"No","section":"52.227-15.b.2"}},{"id":"FAR
-        52.204-17","answers":{"answerText":"No","section":"52.204-17.b"}},{"id":"FAR
-        52.222-18","answers":{"answerText":"No","section":"52.222-18.c.1"}},{"id":"FAR
-        52.222-22","answers":[{"answerText":"No","section":"52.222-22.a"},{"answerText":"Yes","section":"52.222-22.b"}]},{"id":"FAR
-        52.222-25","answers":{"answerText":"XFINION INC.  has not had previous contracts
-        subject to written affirmative action programs requirements from Secretary
-        of Labor regulations.","section":"52.222-25"}},{"id":"FAR 52.225-2","answers":{"answerText":"No","section":"52.225-2.a"}},{"id":"FAR
-        52.225-4","answers":{"answerText":"No","section":"52.225-4.a"}},{"id":"FAR
-        52.225-6","answers":{"answerText":"No","section":"52.225-6.a"}},{"id":"FAR
-        52.222-48","answers":{"answerText":"Vendor will provide information with specific
-        offers to the Government","section":"52.222-48.a.1"}},{"id":"FAR 52.222-52","answers":{"answerText":"Vendor
-        will provide information with specific offers to the Government","section":"52.222-52.a.1.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=qyZOq6sB7LyKg9N5OghGnzGwlGnXHxySB3zGSbam7h4Pu%2Bzp167brvcue4QtWvoN&pitId=GmSb4SZ2dgxeWqzrT75KfiwC6n96ApnoLbohGtsTgJm3hdki%2FGkcgAhKpLsWLdMF&requestId=S0yZ1k9wls69F2o","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
-        252.225-7000","answers":{"answerText":"No","section":"252.225-7000.c.1"}},{"id":"DFAR
-        252.225-7020","answers":{"answerText":"No","section":"252.225-7020.c.1"}},{"id":"DFAR
-        252.225-7022","answers":{"answerText":"No","section":"252.225-7022.c.1"}},{"id":"DFAR
-        252.225-7035","answers":{"answerText":"No","section":"252.225-7035.c.1"}},{"id":"DFAR252.247-7049","answers":[{"answerText":"No","section":"252.247-7049.1"},{"answerText":"No","section":"252.247-7049.2"},{"answerText":"No","section":"252.247-7049.3"},{"answerText":"No","section":"252.247-7049.4"}]}]},"corporateUrl":"http://www.XFinion.com","altGovtBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"zip":"20878","countryCode":"USA","line1":"14608
-        Pebble Hill Lane","stateorProvince":"MD","city":"North Potomac"},"email":"NILAM@XFINION.COM","usPhone":"3013286579","firstName":"NILAM"},"creditCardUsage":true,"countryOfIncorporation":"USA","divisionNumber":"XFinion","electronicBusinessPoc":{"lastName":"GOSWAMI","fax":"8665667533","address":{"zip":"20878","countryCode":"USA","line1":"14608
-        Pebble Hill Lane","stateorProvince":"MD","city":"North Potomac"},"email":"VIJAY@XFINION.COM","usPhone":"3018014897","firstName":"VIJAY"},"mailingAddress":{"zip":"20817","countryCode":"USA","line1":"7800
-        lonesome pine ln","stateorProvince":"MD","city":"Bethesda"},"purposeOfRegistration":"ALL_AWARDS"}}}'
-    http_version: 
-  recorded_at: Sun, 24 Apr 2016 15:32:11 GMT
+  recorded_at: Tue, 24 May 2016 20:30:29 GMT
 - request:
     method: get
     uri: https://api.data.gov/sam/v4/registrations/1459697830000?api_key=<data_dot_gov_api_key>
@@ -1056,11 +613,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - HTTPClient/1.0 (2.8.0, ruby 2.2.0 (2014-12-25))
+      - HTTPClient/1.0 (2.7.1, ruby 2.1.5 (2014-11-13))
       Accept:
       - "*/*"
       Date:
-      - Sun, 24 Apr 2016 16:05:22 GMT
+      - Tue, 24 May 2016 20:30:29 GMT
   response:
     status:
       code: 200
@@ -1069,7 +626,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 24 Apr 2016 16:05:23 GMT
+      - Tue, 24 May 2016 20:30:23 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -1080,9 +637,9 @@ http_interactions:
       - Accept-Encoding
       - Accept-Encoding
       X-Ratelimit-Limit:
-      - '5000'
+      - '25'
       X-Ratelimit-Remaining:
-      - '4992'
+      - '24'
       Age:
       - '0'
       Via:
@@ -1093,44 +650,45 @@ http_interactions:
       encoding: UTF-8
       string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"YOUTZY","fax":"7032277477","address":{"zip":"22033","countryCode":"USA","line1":"12601
         FAIR LAKES CIRCLE","stateorProvince":"VA","city":"FAIRFAX"},"email":"SAM.CGIFEDERAL@CGIFEDERAL.COM","usPhone":"7032276000","firstName":"KIM"},"qualifications":{"acass":{"id":"SF330","answers":{"answerText":"Vendor
-        will provide information with specific offers to the Government","section":"SF330.1"}}},"dunsPlus4":"0000","activationDate":"2016-02-09
-        13:45:12.0","fiscalYearEndCloseDate":"09/30","businessTypes":["VW","2X"],"pastPerformancePoc":{"lastName":"CARLSON","fax":"7032277477","address":{"zip":"22033","countryCode":"USA","line1":"12601
+        will provide information with specific offers to the Government","section":"SF330.1"}}},"dunsPlus4":"0000","activationDate":"2016-05-12
+        15:45:34.0","fiscalYearEndCloseDate":"09/30","businessTypes":["VW","2X"],"pastPerformancePoc":{"lastName":"CARLSON","fax":"7032277477","address":{"zip":"22033","countryCode":"USA","line1":"12601
         FAIR LAKES CIRCLE","stateorProvince":"VA","city":"FAIRFAX"},"email":"SAM.CGIFEDERAL@CGIFEDERAL.COM","usPhone":"7032276000","firstName":"PEGGY"},"registrationDate":"2004-07-29
-        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=tTRaxUCmxkIQW%2BCpgxYZKeHRP%2BIN4jmv9t8z9kaLpKG0GRxnQFcy18fhGIBHDVk1&pitId=rQvN7o0j%2FsZCVTTT9jbuQwcAejhrJMa8ln9LONPiVrNj0v3Z2hP7%2F3WHeezBTi8vSUjT6qMNmkFi%0A8j2AcOPQbw%3D%3D&requestId=mgzV8NB3CRiUC1L"},"hasDelinquentFederalDebt":false,"duns":"145969783","altElectronicBusinessPoc":{"lastName":"CARLSON","fax":"7032277477","address":{"zip":"22030","countryCode":"USA","line1":"12601
-        FAIR LAKES CIRCLE","stateorProvince":"VA","city":"Fairfax"},"email":"SAM.CGIFEDERAL@CGIFEDERAL.COM","usPhone":"7032276000","firstName":"PEGGY"},"cage":"3YVK7","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2017-02-08
-        13:26:39.0","status":"ACTIVE","corporateStructureCode":"2L","stateOfIncorporation":"DE","corporateStructureName":"Corporate
+        00:00:00.0","certificationsURL":{"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=OoFrMmaTb5%2BG0FLl8M4WdORgd1ewrbmZJceYMe6P5S9TOpHPfpxoO7NxgfpbbCQr&pitId=3HgTdOs37%2BywTU%2F%2B3Vu6CyUgnr4K%2BrxsV7oEvV338DEqmMIDsotr5WhWEVmFY%2Fk2%2BKK%2BPS3N3dgC%0AjqZPo57wzQ%3D%3D&requestId=ZE11EV397NNqXLq"},"hasDelinquentFederalDebt":false,"duns":"145969783","altElectronicBusinessPoc":{"lastName":"CARLSON","fax":"7032277477","address":{"zip":"22030","countryCode":"USA","line1":"12601
+        FAIR LAKES CIRCLE","stateorProvince":"VA","city":"Fairfax"},"email":"SAM.CGIFEDERAL@CGIFEDERAL.COM","usPhone":"7032276000","firstName":"PEGGY"},"cage":"3YVK7","hasKnownExclusion":false,"publicDisplay":true,"expirationDate":"2017-05-12
+        15:34:37.0","status":"ACTIVE","corporateStructureCode":"2L","stateOfIncorporation":"DE","corporateStructureName":"Corporate
         Entity (Not Tax Exempt)","legalBusinessName":"CGI FEDERAL INC.","congressionalDistrict":"VA
-        11","companyDivision":"SUBSIDIARY OF CGI TECHNOLOGIES AND SOLUTIONS INC.","bondingInformation":{},"businessStartDate":"2004-05-01","lastUpdateDate":"2016-02-09
-        13:45:12.0","statusMessage":"Active","samAddress":{"zipPlus4":"4902","zip":"22033","countryCode":"USA","line1":"12601
-        FAIR LAKES CIR","stateorProvince":"VA","city":"FAIRFAX"},"submissionDate":"2016-02-09
-        13:26:39.0","naics":[{"isPrimary":false,"naicsCode":"925110","naicsName":"ADMINISTRATION
-        OF HOUSING PROGRAMS"},{"isPrimary":false,"naicsCode":"541712","naicsName":"RESEARCH
-        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"},{"isPrimary":false,"naicsCode":"561440","naicsName":"COLLECTION
-        AGENCIES"},{"isPrimary":false,"naicsCode":"611420","naicsName":"COMPUTER TRAINING"},{"isPrimary":false,"naicsCode":"541330","naicsName":"ENGINEERING
-        SERVICES"},{"isPrimary":false,"naicsCode":"541611","naicsName":"ADMINISTRATIVE
-        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
-        SYSTEMS DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"561110","naicsName":"OFFICE
-        ADMINISTRATIVE SERVICES"},{"isPrimary":false,"naicsCode":"541690","naicsName":"OTHER
-        SCIENTIFIC AND TECHNICAL CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isPrimary":false,"naicsCode":"541513","naicsName":"COMPUTER
-        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":"624310","naicsName":"VOCATIONAL
-        REHABILITATION SERVICES"},{"isPrimary":false,"naicsCode":"541990","naicsName":"ALL
-        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isPrimary":false,"naicsCode":"519190","naicsName":"ALL
-        OTHER INFORMATION SERVICES"},{"isPrimary":false,"naicsCode":"334511","naicsName":"SEARCH,
+        11","companyDivision":"SUBSIDIARY OF CGI TECHNOLOGIES AND SOLUTIONS INC.","bondingInformation":{},"businessStartDate":"2004-05-01","lastUpdateDate":"2016-05-12
+        15:45:34.0","statusMessage":"Active","samAddress":{"zipPlus4":"4902","zip":"22033","countryCode":"USA","line1":"12601
+        FAIR LAKES CIR","stateorProvince":"VA","city":"FAIRFAX"},"submissionDate":"2016-05-12
+        15:34:37.0","naics":[{"isPrimary":false,"naicsCode":"611430","naicsName":"PROFESSIONAL
+        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isPrimary":false,"naicsCode":"541611","naicsName":"ADMINISTRATIVE
+        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541330","naicsName":"ENGINEERING
+        SERVICES"},{"isPrimary":false,"naicsCode":"561611","naicsName":"INVESTIGATION
+        SERVICES"},{"isPrimary":false,"naicsCode":"611420","naicsName":"COMPUTER TRAINING"},{"isPrimary":false,"naicsCode":"541614","naicsName":"PROCESS,
+        PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541219","naicsName":"OTHER
+        ACCOUNTING SERVICES"},{"isPrimary":false,"naicsCode":"519190","naicsName":"ALL
+        OTHER INFORMATION SERVICES"},{"isPrimary":true,"naicsCode":"541519","naicsName":"OTHER
+        COMPUTER RELATED SERVICES"},{"isPrimary":false,"naicsCode":"541712","naicsName":"RESEARCH
+        AND DEVELOPMENT IN THE PHYSICAL, ENGINEERING, AND LIFE SCIENCES (EXCEPT BIOTECHNOLOGY)"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
+        PUBLISHERS"},{"isPrimary":false,"naicsCode":"611699","naicsName":"ALL OTHER
+        MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isPrimary":false,"naicsCode":"541990","naicsName":"ALL
+        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isPrimary":false,"naicsCode":"541513","naicsName":"COMPUTER
+        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":"334511","naicsName":"SEARCH,
         DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT
-        MANUFACTURING"},{"isPrimary":false,"naicsCode":"541614","naicsName":"PROCESS,
-        PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"561611","naicsName":"INVESTIGATION
-        SERVICES"},{"isPrimary":true,"naicsCode":"541519","naicsName":"OTHER COMPUTER
-        RELATED SERVICES"},{"isPrimary":false,"naicsCode":"811111","naicsName":"GENERAL
-        AUTOMOTIVE REPAIR"},{"isPrimary":false,"naicsCode":"334111","naicsName":"ELECTRONIC
-        COMPUTER MANUFACTURING"},{"isPrimary":false,"naicsCode":"611699","naicsName":"ALL
-        OTHER MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isPrimary":false,"naicsCode":"611430","naicsName":"PROFESSIONAL
-        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isPrimary":false,"naicsCode":"561210","naicsName":"FACILITIES
-        SUPPORT SERVICES"},{"isPrimary":false,"naicsCode":"541618","naicsName":"OTHER
-        MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"511210","naicsName":"SOFTWARE
-        PUBLISHERS"},{"isPrimary":false,"naicsCode":"541219","naicsName":"OTHER ACCOUNTING
-        SERVICES"},{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM COMPUTER
-        PROGRAMMING SERVICES"}],"certifications":{"farResponses":[{"id":"FAR 52.209-2","answers":[{"answerText":"No","section":"52.209-2.c.1"},{"answerText":"No","section":"52.209-2.c.2"}]},{"id":"FAR
+        MANUFACTURING"},{"isPrimary":false,"naicsCode":"541690","naicsName":"OTHER
+        SCIENTIFIC AND TECHNICAL CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541512","naicsName":"COMPUTER
+        SYSTEMS DESIGN SERVICES"},{"isPrimary":false,"naicsCode":"561210","naicsName":"FACILITIES
+        SUPPORT SERVICES"},{"isPrimary":false,"naicsCode":"561440","naicsName":"COLLECTION
+        AGENCIES"},{"isPrimary":false,"naicsCode":"811111","naicsName":"GENERAL AUTOMOTIVE
+        REPAIR"},{"isPrimary":false,"naicsCode":"518210","naicsName":"DATA PROCESSING,
+        HOSTING, AND RELATED SERVICES"},{"isPrimary":false,"naicsCode":"624310","naicsName":"VOCATIONAL
+        REHABILITATION SERVICES"},{"isPrimary":false,"naicsCode":"334111","naicsName":"ELECTRONIC
+        COMPUTER MANUFACTURING"},{"isPrimary":false,"naicsCode":"925110","naicsName":"ADMINISTRATION
+        OF HOUSING PROGRAMS"},{"isPrimary":false,"naicsCode":"561110","naicsName":"OFFICE
+        ADMINISTRATIVE SERVICES"},{"isPrimary":false,"naicsCode":"541618","naicsName":"OTHER
+        MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":"541511","naicsName":"CUSTOM
+        COMPUTER PROGRAMMING SERVICES"}],"certifications":{"farResponses":[{"id":"FAR
+        52.209-2","answers":[{"answerText":"No","section":"52.209-2.c.1"},{"answerText":"No","section":"52.209-2.c.2"}]},{"id":"FAR
         52.209-5","answers":[{"answerText":"No","section":"52.209-5.a.1.i.A"},{"answerText":"No","section":"52.209-5.a.1.i.B"},{"answerText":"No","section":"52.209-5.a.1.i.D"},{"answerText":"No","section":"52.209-5.a.1.i.C"},{"answerText":"No","section":"52.209-5.a.1.ii"}]},{"id":"FAR
         52.203-2","answers":{"section":"52.203-2.b.2.i","SamPointOfContact":{"lastName":"Hargis","title":"Pricing
         Director","firstName":"Jack"}}},{"id":"FAR 52.215-6","answers":[{"answerText":"Yes","section":"52.215-6.a"},{"samFacility":[{"ownerName":"CGI
@@ -1152,6 +710,8 @@ http_interactions:
         Capital Court","city":"Manassas"},"ownerAddress":{"zip":22033,"countryCode":"USA","stateOrProvince":"VA","line1":"12601
         Fair Lakes Circle","city":"Fairfax"}},{"ownerName":"CGI Federal","plantAddress":{"zip":73501,"countryCode":"USA","stateOrProvince":"OK","line1":"1224
         SW Rex Madeira Road","city":"Lawton"},"ownerAddress":{"zip":22033,"countryCode":"USA","stateOrProvince":"VA","line1":"12601
+        Fair Lakes Circle","city":"Fairfax"}},{"ownerName":"CGI Federal","plantAddress":{"zip":92108,"countryCode":"USA","stateOrProvince":"CA","line1":"7480
+        Mission Valley Road, Suite 100","city":"San Diego"},"ownerAddress":{"zip":22033,"countryCode":"USA","stateOrProvince":"VA","line1":"12601
         Fair Lakes Circle","city":"Fairfax"}}],"section":"52.215-6.b"}]},{"id":"FAR
         52.214-14","answers":[{"answerText":"Yes","section":"52.214-14.a"},{"samFacility":[{"ownerName":"CGI
         Federal","plantAddress":{"zip":43215,"countryCode":"USA","stateOrProvince":"OH","line1":"88
@@ -1172,6 +732,8 @@ http_interactions:
         Capital Court","city":"Manassas"},"ownerAddress":{"zip":22033,"countryCode":"USA","stateOrProvince":"VA","line1":"12601
         Fair Lakes Circle","city":"Fairfax"}},{"ownerName":"CGI Federal","plantAddress":{"zip":73501,"countryCode":"USA","stateOrProvince":"OK","line1":"1224
         SW Rex Madeira Road","city":"Lawton"},"ownerAddress":{"zip":22033,"countryCode":"USA","stateOrProvince":"VA","line1":"12601
+        Fair Lakes Circle","city":"Fairfax"}},{"ownerName":"CGI Federal","plantAddress":{"zip":92108,"countryCode":"USA","stateOrProvince":"CA","line1":"7480
+        Mission Valley Road, Suite 100","city":"San Diego"},"ownerAddress":{"zip":22033,"countryCode":"USA","stateOrProvince":"VA","line1":"12601
         Fair Lakes Circle","city":"Fairfax"}}],"section":"52.214-14.b"}]},{"id":"FAR
         52.223-4","answers":{"answerText":"Vendor will provide information with specific
         offers to the Government","section":"52.223-4"}},{"id":"FAR 52.223-9","answers":{"answerText":"Vendor
@@ -1180,20 +742,18 @@ http_interactions:
         52.204-3","answers":[{"answerText":"TIN ON FILE","section":"52.204-3.d"},{"answerText":"Yes","section":"52.204-3.f"},{"Company":{"name":"The
         CGI Group Holding Corp","tin":"TIN ON FILE"},"section":"52.204-3.f.3"}]},{"id":"FAR
         52.212-3","answers":[{"naics":[{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
-        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)
-        11"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
-        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)
-        11"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Aircraft
-        Parts, and Auxiliary Equipment, and Aircraft Engine Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Aircraft
-        Parts, and Auxiliary Equipment, and Aircraft Engine Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Space
-        Vehicles and Guided Missiles, their Propulsion Units, their Propulsion Units
-        Parts, and their Auxiliary Equipment and Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Space
-        Vehicles and Guided Missiles, their Propulsion Units, their Propulsion Units
-        Parts, and their Auxiliary Equipment and Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
+        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
+        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft
+        Engine and Engine Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft
+        Engine and Engine Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Other
+        Aircraft Parts and Auxiliary Equipment"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Other
+        Aircraft Parts and Auxiliary Equipment"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Guided
+        Missiles and Space Vehicles, Their Propulsion Units and Propulsion Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Guided
+        Missiles and Space Vehicles, Their Propulsion Units and Propulsion Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
         Computer Related Services"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
         Computer Related Services"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
+        Technology Value Added Resellers"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
+        Technology Value Added Resellers"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
         Services"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
         Services"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":2,"naicsName":"Military
         and Aerospace Equipment and Military Weapons"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":2,"naicsName":"Military
@@ -1205,27 +765,27 @@ http_interactions:
         Engineering and Naval Architecture"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":4,"naicsName":"Marine
         Engineering and Naval Architecture"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561440,"naicsName":"COLLECTION
         AGENCIES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541618,"naicsName":"OTHER
-        MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":925110,"naicsName":"ADMINISTRATION
-        OF HOUSING PROGRAMS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541611,"naicsName":"ADMINISTRATIVE
-        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541513,"naicsName":"COMPUTER
-        FACILITIES MANAGEMENT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561611,"naicsName":"INVESTIGATION
-        SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611430,"naicsName":"PROFESSIONAL
-        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541511,"naicsName":"CUSTOM
+        MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611430,"naicsName":"PROFESSIONAL
+        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541611,"naicsName":"ADMINISTRATIVE
+        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561611,"naicsName":"INVESTIGATION
+        SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541513,"naicsName":"COMPUTER
+        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":925110,"naicsName":"ADMINISTRATION
+        OF HOUSING PROGRAMS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541511,"naicsName":"CUSTOM
         COMPUTER PROGRAMMING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611420,"naicsName":"COMPUTER
-        TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541990,"naicsName":"ALL
-        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
-        PUBLISHERS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561110,"naicsName":"OFFICE
-        ADMINISTRATIVE SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":519190,"naicsName":"ALL
-        OTHER INFORMATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334111,"naicsName":"ELECTRONIC
-        COMPUTER MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561210,"naicsName":"FACILITIES
-        SUPPORT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
+        TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
+        PUBLISHERS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541990,"naicsName":"ALL
+        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
+        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":519190,"naicsName":"ALL
+        OTHER INFORMATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561210,"naicsName":"FACILITIES
+        SUPPORT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334111,"naicsName":"ELECTRONIC
+        COMPUTER MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561110,"naicsName":"OFFICE
+        ADMINISTRATIVE SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
         SYSTEMS DESIGN SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":624310,"naicsName":"VOCATIONAL
-        REHABILITATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334511,"naicsName":"SEARCH,
+        REHABILITATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611699,"naicsName":"ALL
+        OTHER MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334511,"naicsName":"SEARCH,
         DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT
         MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":811111,"naicsName":"GENERAL
-        AUTOMOTIVE REPAIR"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611699,"naicsName":"ALL
-        OTHER MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541690,"naicsName":"OTHER
+        AUTOMOTIVE REPAIR"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541690,"naicsName":"OTHER
         SCIENTIFIC AND TECHNICAL CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541614,"naicsName":"PROCESS,
         PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541219,"naicsName":"OTHER
         ACCOUNTING SERVICES"}],"section":"52.212-3.c"},{"answerText":"No","section":"52.212-3.c.4"},{"answerText":"No","section":"52.212-3.c.10.ii"},{"answerText":"No","section":"52.212-3.c.11.ii"},{"answerText":"Yes","section":"52.212-3.d.1.i"},{"answerText":"Yes","section":"52.212-3.d.1.ii"},{"answerText":"CGI
@@ -1234,20 +794,18 @@ http_interactions:
         will provide information with specific offers to the Government","section":"52.212-3.f"},{"answerText":"No","section":"52.212-3.h.1"},{"answerText":"No","section":"52.212-3.h.2"},{"answerText":"No","section":"52.212-3.h.4"},{"answerText":"No","section":"52.212-3.h.3"},{"answerText":"No","section":"52.212-3.h.5"},{"answerText":"No","section":"52.212-3.i.2.i"},{"section":"52.212-3.j"},{"answerText":"No","section":"52.212-3.k.1.2.i"},{"answerText":"No","section":"52.212-3.k.2.2"},{"answerText":"Yes","section":"52.212-3.l.5"},{"Company":{"name":"The
         CGI Group Holding Corp","tin":"TIN ON FILE"},"section":"52.212-3.l.5.3"},{"answerText":"No","section":"52.212-3.n.2.i"},{"answerText":"No","section":"52.212-3.n.2.ii"},{"answerText":"No","section":"52.226-2.b.1"},{"answerText":"No","section":"52.226-2.b.2"}]},{"id":"FAR
         52.219-1","answers":[{"naics":[{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
-        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)
-        11"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
-        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)
-        11"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Aircraft
-        Parts, and Auxiliary Equipment, and Aircraft Engine Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Aircraft
-        Parts, and Auxiliary Equipment, and Aircraft Engine Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Space
-        Vehicles and Guided Missiles, their Propulsion Units, their Propulsion Units
-        Parts, and their Auxiliary Equipment and Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Space
-        Vehicles and Guided Missiles, their Propulsion Units, their Propulsion Units
-        Parts, and their Auxiliary Equipment and Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
+        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
+        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft
+        Engine and Engine Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft
+        Engine and Engine Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Other
+        Aircraft Parts and Auxiliary Equipment"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Other
+        Aircraft Parts and Auxiliary Equipment"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Guided
+        Missiles and Space Vehicles, Their Propulsion Units and Propulsion Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Guided
+        Missiles and Space Vehicles, Their Propulsion Units and Propulsion Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
         Computer Related Services"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
         Computer Related Services"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
+        Technology Value Added Resellers"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
+        Technology Value Added Resellers"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
         Services"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
         Services"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":2,"naicsName":"Military
         and Aerospace Equipment and Military Weapons"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":2,"naicsName":"Military
@@ -1259,45 +817,43 @@ http_interactions:
         Engineering and Naval Architecture"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":4,"naicsName":"Marine
         Engineering and Naval Architecture"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561440,"naicsName":"COLLECTION
         AGENCIES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541618,"naicsName":"OTHER
-        MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":925110,"naicsName":"ADMINISTRATION
-        OF HOUSING PROGRAMS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541611,"naicsName":"ADMINISTRATIVE
-        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541513,"naicsName":"COMPUTER
-        FACILITIES MANAGEMENT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561611,"naicsName":"INVESTIGATION
-        SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611430,"naicsName":"PROFESSIONAL
-        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541511,"naicsName":"CUSTOM
+        MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611430,"naicsName":"PROFESSIONAL
+        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541611,"naicsName":"ADMINISTRATIVE
+        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561611,"naicsName":"INVESTIGATION
+        SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541513,"naicsName":"COMPUTER
+        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":925110,"naicsName":"ADMINISTRATION
+        OF HOUSING PROGRAMS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541511,"naicsName":"CUSTOM
         COMPUTER PROGRAMMING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611420,"naicsName":"COMPUTER
-        TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541990,"naicsName":"ALL
-        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
-        PUBLISHERS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561110,"naicsName":"OFFICE
-        ADMINISTRATIVE SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":519190,"naicsName":"ALL
-        OTHER INFORMATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334111,"naicsName":"ELECTRONIC
-        COMPUTER MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561210,"naicsName":"FACILITIES
-        SUPPORT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
+        TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
+        PUBLISHERS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541990,"naicsName":"ALL
+        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
+        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":519190,"naicsName":"ALL
+        OTHER INFORMATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561210,"naicsName":"FACILITIES
+        SUPPORT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334111,"naicsName":"ELECTRONIC
+        COMPUTER MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561110,"naicsName":"OFFICE
+        ADMINISTRATIVE SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
         SYSTEMS DESIGN SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":624310,"naicsName":"VOCATIONAL
-        REHABILITATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334511,"naicsName":"SEARCH,
+        REHABILITATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611699,"naicsName":"ALL
+        OTHER MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334511,"naicsName":"SEARCH,
         DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT
         MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":811111,"naicsName":"GENERAL
-        AUTOMOTIVE REPAIR"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611699,"naicsName":"ALL
-        OTHER MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541690,"naicsName":"OTHER
+        AUTOMOTIVE REPAIR"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541690,"naicsName":"OTHER
         SCIENTIFIC AND TECHNICAL CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541614,"naicsName":"PROCESS,
         PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541219,"naicsName":"OTHER
         ACCOUNTING SERVICES"}],"section":"52.219-1.b"},{"answerText":"No","section":"52.219-1.b.8.ii"}]},{"id":"FAR
         52.219-22","answers":[{"naics":[{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
-        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)
-        11"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
-        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)
-        11"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Aircraft
-        Parts, and Auxiliary Equipment, and Aircraft Engine Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Aircraft
-        Parts, and Auxiliary Equipment, and Aircraft Engine Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Space
-        Vehicles and Guided Missiles, their Propulsion Units, their Propulsion Units
-        Parts, and their Auxiliary Equipment and Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Space
-        Vehicles and Guided Missiles, their Propulsion Units, their Propulsion Units
-        Parts, and their Auxiliary Equipment and Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
+        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":1,"naicsName":"Research
+        and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft
+        Engine and Engine Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":2,"naicsName":"Aircraft
+        Engine and Engine Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Other
+        Aircraft Parts and Auxiliary Equipment"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":3,"naicsName":"Other
+        Aircraft Parts and Auxiliary Equipment"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Guided
+        Missiles and Space Vehicles, Their Propulsion Units and Propulsion Parts"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541712,"ExcpCounter":4,"naicsName":"Guided
+        Missiles and Space Vehicles, Their Propulsion Units and Propulsion Parts"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
         Computer Related Services"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":1,"naicsName":"Other
         Computer Related Services"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
-        Technology Value Added Resellers18"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
+        Technology Value Added Resellers"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541519,"ExcpCounter":2,"naicsName":"Information
+        Technology Value Added Resellers"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
         Services"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":1,"naicsName":"Engineering
         Services"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541330,"ExcpCounter":2,"naicsName":"Military
         and Aerospace Equipment and Military Weapons"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":2,"naicsName":"Military
@@ -1309,27 +865,27 @@ http_interactions:
         Engineering and Naval Architecture"},{"isSmallBusiness":"N","isPrimary":true,"naicsCode":541330,"ExcpCounter":4,"naicsName":"Marine
         Engineering and Naval Architecture"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561440,"naicsName":"COLLECTION
         AGENCIES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541618,"naicsName":"OTHER
-        MANAGEMENT CONSULTING SERVICES"},{"isPrimary":false,"naicsCode":925110,"naicsName":"ADMINISTRATION
-        OF HOUSING PROGRAMS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541611,"naicsName":"ADMINISTRATIVE
-        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541513,"naicsName":"COMPUTER
-        FACILITIES MANAGEMENT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561611,"naicsName":"INVESTIGATION
-        SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611430,"naicsName":"PROFESSIONAL
-        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541511,"naicsName":"CUSTOM
+        MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611430,"naicsName":"PROFESSIONAL
+        AND MANAGEMENT DEVELOPMENT TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541611,"naicsName":"ADMINISTRATIVE
+        MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561611,"naicsName":"INVESTIGATION
+        SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541513,"naicsName":"COMPUTER
+        FACILITIES MANAGEMENT SERVICES"},{"isPrimary":false,"naicsCode":925110,"naicsName":"ADMINISTRATION
+        OF HOUSING PROGRAMS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541511,"naicsName":"CUSTOM
         COMPUTER PROGRAMMING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611420,"naicsName":"COMPUTER
-        TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
-        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541990,"naicsName":"ALL
-        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
-        PUBLISHERS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561110,"naicsName":"OFFICE
-        ADMINISTRATIVE SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":519190,"naicsName":"ALL
-        OTHER INFORMATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334111,"naicsName":"ELECTRONIC
-        COMPUTER MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561210,"naicsName":"FACILITIES
-        SUPPORT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
+        TRAINING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":511210,"naicsName":"SOFTWARE
+        PUBLISHERS"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541990,"naicsName":"ALL
+        OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":518210,"naicsName":"DATA
+        PROCESSING, HOSTING, AND RELATED SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":519190,"naicsName":"ALL
+        OTHER INFORMATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561210,"naicsName":"FACILITIES
+        SUPPORT SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334111,"naicsName":"ELECTRONIC
+        COMPUTER MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":561110,"naicsName":"OFFICE
+        ADMINISTRATIVE SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541512,"naicsName":"COMPUTER
         SYSTEMS DESIGN SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":624310,"naicsName":"VOCATIONAL
-        REHABILITATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334511,"naicsName":"SEARCH,
+        REHABILITATION SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611699,"naicsName":"ALL
+        OTHER MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":334511,"naicsName":"SEARCH,
         DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT
         MANUFACTURING"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":811111,"naicsName":"GENERAL
-        AUTOMOTIVE REPAIR"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":611699,"naicsName":"ALL
-        OTHER MISCELLANEOUS SCHOOLS AND INSTRUCTION"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541690,"naicsName":"OTHER
+        AUTOMOTIVE REPAIR"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541690,"naicsName":"OTHER
         SCIENTIFIC AND TECHNICAL CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541614,"naicsName":"PROCESS,
         PHYSICAL DISTRIBUTION, AND LOGISTICS CONSULTING SERVICES"},{"isSmallBusiness":"N","isPrimary":false,"naicsCode":541219,"naicsName":"OTHER
         ACCOUNTING SERVICES"}],"section":"52.219-22.b"},{"answerText":"No","section":"52.219-22.b.2.1"},{"answerText":"No","section":"52.219-22.b.1.ii"}]},{"id":"FAR
@@ -1346,7 +902,7 @@ http_interactions:
         52.225-6","answers":{"answerText":"Vendor will provide information with specific
         offers to the Government","section":"52.225-6.a"}},{"id":"FAR 52.222-48","answers":{"answerText":"No","section":"52.222-48.a.1"}},{"id":"FAR
         52.222-52","answers":{"answerText":"No","section":"52.222-52.a.1.1"}},{"id":"SF330","answers":{"answerText":"Vendor
-        will provide information with specific offers to the Government","section":"SF330.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=Ajo0gier0q3Dqjv85vnGcatixcSU55loaOUrJ58ENixFbvhx2PMzQj9lgIhBaKyp&pitId=Am7u9enhER%2FItHbvdO%2FXd68YdlJSRw3DA1a6amEY3C7LHqvyAUu4jY%2FW%2FLbpllcz&requestId=76cV8fq4nP8yZsV","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
+        will provide information with specific offers to the Government","section":"SF330.1"}}],"pdfUrl":"https://www.sam.gov/SAMPortal/filedownload?reportType=2&orgId=pprvXwALE%2FmWxYO1ihaaaniO0jTZs3cYrpn0GIUNi2VJtmSix%2FxcpO4iv8egwoUr&pitId=ogMEeZYi5Z0pdGDTjpmmMKxIAk9YgiJRoJhqEVL0JvITuX%2FI7Z51uG076vnCxkQP&requestId=V5B0n5tODa7aQcl","dfarResponses":[{"id":"DFAR252.247-7022","answers":{"answerText":"No","section":"252.247-7022.b"}},{"id":"DFAR252.216-7008","answers":{"answerText":"No","section":"DFAR252.216-7008.a"}},{"id":"DFAR252.209-7002","answers":{"answerText":"No","section":"DFAR252.209-7002.1"}},{"id":"DFAR
         252.225-7000","answers":{"answerText":"Vendor will provide information with
         specific offers to the Government","section":"252.225-7000.c.1"}},{"id":"DFAR
         252.225-7020","answers":{"answerText":"Vendor will provide information with
@@ -1358,5 +914,5 @@ http_interactions:
         FAIR LAKES CIRCLE","stateorProvince":"VA","city":"FAIRFAX"},"email":"SAM.CGIFEDERAL@CGIFEDERAL.COM","usPhone":"7032276000","firstName":"KIM"},"mailingAddress":{"zipPlus4":"4902","zip":"22033","countryCode":"USA","line1":"12601
         FAIR LAKES CIRCLE","stateorProvince":"VA","line2":"GWAC SOLUTIONS CENTER","city":"FAIRFAX"},"purposeOfRegistration":"ALL_AWARDS"}}}'
     http_version: 
-  recorded_at: Sun, 24 Apr 2016 16:05:23 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 24 May 2016 20:30:30 GMT
+recorded_with: VCR 2.9.3

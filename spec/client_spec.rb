@@ -25,6 +25,47 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
     ]
   end
 
+  describe '#get_vendor_summary' do
+    it 'returns a hash containing in_sam and small_business keys' do
+      response = client.get_vendor_summary(duns: nine_duns)
+
+      expect(response).to have_key(:in_sam)
+      expect(response).to have_key(:small_business)
+    end
+
+    context 'when the DUNS belongs to a small business' do
+      it 'has small_business set to true' do
+        response = client.get_vendor_summary(duns: nine_duns)
+
+        expect(response[:small_business]).to eq(true)
+      end
+    end
+
+    context 'when the DUNS belongs to a big business' do
+      it 'has small_business set to false' do
+        response = client.get_vendor_summary(duns: big_biz_duns)
+
+        expect(response[:small_business]).to eq(false)
+      end
+    end
+
+    context 'when the DUNS is in SAM' do
+      it 'has in_sam set to true' do
+        response = client.get_vendor_summary(duns: nine_duns)
+
+        expect(response[:in_sam]).to eq(true)
+      end
+    end
+
+    context 'when the DUNS is not in SAM' do
+      it 'has in_sam set to false' do
+        response = client.get_vendor_summary(duns: non_existent_duns)
+
+        expect(response[:in_sam]).to eq(false)
+      end
+    end
+  end
+
   context '#get_sam_status' do
     it 'should return a Hash given a valid DUNS number' do
       skip 'until SSL issues can be addressed'

@@ -14,10 +14,18 @@ module Samwise
       JSON.parse(response.body)
     end
 
-    def duns_is_in_sam?(duns: nil, delay: 1)
-      sleep(delay)
+    def get_vendor_summary(duns: duns)
       response = lookup_duns(duns: duns)
-      response.status == 200
+
+      {
+        in_sam: parse_response_for_sam_status(response),
+        small_business: parse_response_for_small_business(response)
+      }
+    end
+
+    def duns_is_in_sam?(duns: nil)
+      response = lookup_duns(duns: duns)
+      parse_response_for_sam_status(response)
     end
 
     def get_sam_status(duns: nil)
@@ -32,6 +40,18 @@ module Samwise
 
     def small_business?(duns: nil)
       response = lookup_duns(duns: duns)
+      parse_response_for_small_business(response)
+    end
+
+    private
+
+    def parse_response_for_sam_status(response)
+      response.status == 200
+    end
+
+    def parse_response_for_small_business(response)
+      return false if response.code != 200
+
       data = JSON.parse(response.body)["sam_data"]["registration"]
 
       far_responses = data['certifications']['farResponses']
@@ -50,8 +70,6 @@ module Samwise
         answer['isSmallBusiness'] == 'Y'
       end.nil?
     end
-
-    private
 
     def lookup_duns(duns: nil)
       duns = Samwise::Util.format_duns(duns: duns)

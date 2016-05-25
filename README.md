@@ -29,6 +29,21 @@ client = Samwise::Client.new(api_key: 'my key ...')
 client = Samwise::Client.new
 ```
 
+### Get summary info in a single request
+
+```ruby
+client.get_vendor_summary(duns: '080037478')
+#=>
+{
+  in_sam: true,
+  small_business: true
+}
+```
+
+Note: the definition of `small_business` is IT-centric.
+
+See `Verify Vendor is a small business` for the list of NAICS codes uses to check if some a vendor is a small business.
+
 ### Verify DUNS number is in SAM.gov
 
 ```ruby
