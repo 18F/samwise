@@ -14,7 +14,7 @@ module Samwise
       JSON.parse(response.body)
     end
 
-    def get_vendor_summary(duns: duns)
+    def get_vendor_summary(duns: nil)
       response = lookup_duns(duns: duns)
 
       {
