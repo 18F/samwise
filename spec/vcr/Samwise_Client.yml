@@ -915,4 +915,58 @@ http_interactions:
         FAIR LAKES CIRCLE","stateorProvince":"VA","line2":"GWAC SOLUTIONS CENTER","city":"FAIRFAX"},"purposeOfRegistration":"ALL_AWARDS"}}}'
     http_version: 
   recorded_at: Tue, 24 May 2016 20:30:30 GMT
-recorded_with: VCR 2.9.3
+- request:
+    method: get
+    uri: https://api.data.gov/sam/v4/registrations/5061639620000?api_key=<data_dot_gov_api_key>
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.8.0, ruby 2.3.0 (2015-12-25))
+      Accept:
+      - "*/*"
+      Date:
+      - Tue, 07 Jun 2016 00:09:45 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 07 Jun 2016 00:09:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '25'
+      X-Ratelimit-Remaining:
+      - '24'
+      Age:
+      - '0'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"sam_data":{"registration":{"govtBusinessPoc":{"lastName":"RAKIC","address":{"zip":"11111","countryCode":"SRB","line1":"Molerova
+        12/2","stateorProvince":"AA","city":"Belgrade"},"email":"GRAKIC@DEVBASE.NET","nonUsPhone":"381-637074291","firstName":"GORAN"},"hasKnownExclusion":false,"publicDisplay":true,"status":"WIP","corporateStructureCode":"2J","corporateStructureName":"Sole
+        Proprietorship","ncage":"A0C7S","legalBusinessName":"GORAN RAKIC PR DEVBASE","dunsPlus4":"0000","congressionalDistrict":"
+        ","bondingInformation":{},"fiscalYearEndCloseDate":"12/31","businessStartDate":"2015-10-28","businessTypes":["VW","2X"],"lastUpdateDate":"2016-03-16
+        17:29:25.0","samAddress":{"zip":"11111","countryCode":"SRB","line1":"MOLEROVA
+        12","city":"Belgrade"},"naics":[{"isPrimary":true,"naicsCode":"541511","naicsName":"CUSTOM
+        COMPUTER PROGRAMMING SERVICES"}],"registrationDate":"2016-03-16 00:00:00.0","creditCardUsage":true,"duns":"506163962","countryOfIncorporation":"SRB","electronicBusinessPoc":{"lastName":"RAKIC","address":{"zip":"11111","countryCode":"SRB","line1":"Molerova
+        12/2","stateorProvince":"AA","city":"Belgrade"},"email":"GRAKIC@DEVBASE.NET","nonUsPhone":"381-637074291","firstName":"GORAN"},"mailingAddress":{"zip":"11111","countryCode":"SRB","line1":"MOLEROVA
+        12/2","city":"Belgrade"},"purposeOfRegistration":"ALL_AWARDS"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Jun 2016 00:09:45 GMT
+recorded_with: VCR 3.0.3
