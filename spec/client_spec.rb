@@ -49,6 +49,15 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
       end
     end
 
+    context 'when API response does not certification data' do
+      it 'set small_business to false' do
+        incomplete_data_duns = '506163962'
+        response = client.get_vendor_summary(duns: incomplete_data_duns)
+
+        expect(response[:small_business]).to eq(false)
+      end
+    end
+
     context 'when the DUNS is in SAM' do
       it 'has in_sam set to true' do
         response = client.get_vendor_summary(duns: nine_duns)
@@ -163,22 +172,6 @@ describe Samwise::Client, vcr: { cassette_name: "Samwise::Client", record: :new_
     it "should verify that vendor in the system is not on the excluded vendor list in sam.gov" do
       response = client.excluded?(duns: nine_duns)
       expect(response).to be(false)
-    end
-  end
-
-  context '#small_business?' do
-    context 'the DUNS belongs to a big business' do
-      it 'should return false' do
-        response = client.small_business?(duns: big_biz_duns)
-        expect(response).to be(false)
-      end
-    end
-
-    context 'the DUNS belongs to a small business' do
-      it 'should return true' do
-        response = client.small_business?(duns: nine_duns)
-        expect(response).to be(true)
-      end
     end
   end
 end

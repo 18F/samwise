@@ -1,5 +1,6 @@
 require 'json'
 require 'httpclient'
+require_relative './duns_lookup'
 
 module Samwise
   class Client
@@ -19,7 +20,7 @@ module Samwise
 
       {
         in_sam: parse_response_for_sam_status(response),
-        small_business: parse_response_for_small_business(response)
+        small_business: small_business?(response)
       }
     end
 
@@ -38,37 +39,14 @@ module Samwise
       JSON.parse(response.body)["hasKnownExclusion"] == false
     end
 
-    def small_business?(duns: nil)
-      response = lookup_duns(duns: duns)
-      parse_response_for_small_business(response)
-    end
-
     private
 
     def parse_response_for_sam_status(response)
       response.status == 200
     end
 
-    def parse_response_for_small_business(response)
-      return false if response.code != 200
-
-      data = JSON.parse(response.body)["sam_data"]["registration"]
-
-      far_responses = data['certifications']['farResponses']
-      response_to_small_biz = far_responses.find do |response|
-        response['id'] == Samwise::Protocol::FAR_SMALL_BIZ_CITATION
-      end
-
-      answers = response_to_small_biz['answers']
-
-      naics_answers = answers.find {|answer| answer.has_key?('naics')}['naics']
-      small_business_naics_answers = naics_answers.select do |answer|
-        Samwise::Protocol::NAICS_WHITELIST.include?(answer['naicsCode'])
-      end
-
-      !small_business_naics_answers.detect do |answer|
-        answer['isSmallBusiness'] == 'Y'
-      end.nil?
+    def small_business?(response)
+      Samwise::DunsLookup.new(response).small_business?
     end
 
     def lookup_duns(duns: nil)
